@@ -72,6 +72,7 @@ Proses booting memungkinkan komputer untuk memulai operasi normalnya dan siap di
 <img src="picture 5.png">
 
 6.Klik 2 kali dan akan memasuki proses penginstalan debian dan pilih graphic install dan akan memunculkan halaman tersebut dan pilih english
+
 <img src="picture 6.png">
 
 7.Pilih yes pada bagian install the GRUB boot loader dan pilih continue
