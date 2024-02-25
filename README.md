@@ -88,8 +88,7 @@ tersebut dan pilih english
 10.Pada bagian konfigurasi keyboard,pilih American English
 <img src="picture 11.png">
 
-11.Tunggu instalasi sampai selesai,bila sudah selesai masukkan konfigurasi network untuk hostname dan untuk domain kita
-kosongkan
+11.Tunggu instalasi sampai selesai,bila sudah selesai masukkan konfigurasi network untuk hostname dan untuk domain kita kosongkan
 <img src="picture 12.png">
 <img src="picture 13.png">
 <img src="picture 14.png">
@@ -110,8 +109,7 @@ kosongkan
 <img src="picture 21.png">
 <img src="picture 22.png">
 
-16.Pilih pri/log,kemudian create new partition,atur ke 20GB,pilih primary,kemudian pilih beginning dan bootable flag
-ubah ke on dan pilih done
+16.Pilih pri/log,kemudian create new partition,atur ke 20GB,pilih primary,kemudian pilih beginning dan bootable flag ubah ke on dan pilih done
 <img src="picture 23.png">
 <img src="picture 24.png">
 <img src="picture 25.png">
