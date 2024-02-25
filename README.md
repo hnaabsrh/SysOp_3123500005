@@ -57,93 +57,93 @@ Proses booting memungkinkan komputer untuk memulai operasi normalnya dan siap di
 # 2. Bagaimana cara install Debian 12 di Virtualbox
 
 1.Buka virtual box dan pilih tombol new untuk membuat virtual device
-<img src="picture1.png">
+<img src="pictures/picture1.png">
 
 2.Beri nama untuk project nya dan pilih iso debian yang ada di storage dan checklist kolom skip
-<img src="picture2.png">
+<img src="pictures/picture2.png">
 
 3.Atur berapa ram yang ingin di gunakan(sesuaikan dengan ram device) dan core cpu
-<img src="picture3.png">
+<img src="pictures/picture3.png">
 
 4.Jika sudah maka klik finish untuk menyelesaikan setup
-<img src="picture 4.png">
+<img src="pictures/picture 4.png">
 
 5.Akan terdapat pilihan proses booting nya debian pada halaman awal tadi
-<img src="picture 5.png">
+<img src="pictures/picture 5.png">
 
 6.Klik 2 kali dan akan memasuki proses penginstalan debian dan pilih graphic install dan akan memunculkan halaman tersebut dan pilih english
 
-<img src="picture 6.png">
+<img src="pictures/picture 6.png">
 
 7.Pilih yes pada bagian install the GRUB boot loader dan pilih continue
-<img src="picture 7.png">
+<img src="pictures/picture 7.png">
 
 8.Pilih Asia kemudian Indonesia sebagai lokasi kita dan klik continue
-<img src="picture 8.png">
-<img src="picture 9.png">
+<img src="pictures/picture 8.png">
+<img src="pictures/picture 9.png">
 
 9.Saat konfigurasi lokal,pilih United States
-<img src="picture 10.png">
+<img src="pictures/picture 10.png">
 
 10.Pada bagian konfigurasi keyboard,pilih American English
-<img src="picture 11.png">
+<img src="pictures/picture 11.png">
 
 11.Tunggu instalasi sampai selesai,bila sudah selesai masukkan konfigurasi network untuk hostname dan untuk domain kita kosongkan
 
-<img src="picture 12.png">
-<img src="picture 13.png">
-<img src="picture 14.png">
+<img src="pictures/picture 12.png">
+<img src="pictures/picture 13.png">
+<img src="pictures/picture 14.png">
 
 12.Atur Password untuk masuk(yang mudah di ingat)
-<img src="picture 15.png">
+<img src="pictures/picture 15.png">
 
 13.Masukkan nama lengkap,username dan password(bedakan dari password sebelum nya) untuk setup user
-<img src="picture 16.png">
-<img src="picture 17.png">
-<img src="picture 18.png">
+<img src="pictures/picture 16.png">
+<img src="pictures/picture 17.png">
+<img src="pictures/picture 18.png">
 
 14.Pilih zona untuk jam,dan pilih Western(tergantung tempat)
-<img src="picture 19.png">
+<img src="pictures/picture 19.png">
 
 15.Untuk partition disk pilih manual dan pilih SCSI3 dan pilih yes pada create new empy partition table
-<img src="picture 20.png">
-<img src="picture 21.png">
-<img src="picture 22.png">
+<img src="pictures/picture 20.png">
+<img src="pictures/picture 21.png">
+<img src="pictures/picture 22.png">
 
 16.Pilih pri/log,kemudian create new partition,atur ke 20GB,pilih primary,kemudian pilih beginning dan bootable flag ubah ke on dan pilih done
 
-<img src="picture 23.png">
-<img src="picture 24.png">
-<img src="picture 25.png">
-<img src="picture 26.png">
-<img src="picture 27.png">
-<img src="picture 28.png">
+<img src="pictures/picture 23.png">
+<img src="pictures/picture 24.png">
+<img src="pictures/picture 25.png">
+<img src="pictures/picture 26.png">
+<img src="pictures/picture 27.png">
+<img src="pictures/picture 28.png">
 
 17.Setelah di partisi menjadi beberapa bagian,kemudian pilih finish dan tunggu instalasi sampai selesai
-<img src="picture 29.png">
-<img src="picture 30.png">
+<img src="pictures/picture 29.png">
+<img src="pictures/picture 30.png">
 
 18.Pilih no pada scan extra installation,pilih indonesia untuk debian archive dan pilih kebo.pens dan kosongkan http
 proxy
-<img src="picture 31.png">
-<img src="picture 32.png">
-<img src="picture 33.png">
-<img src="picture 34.png">
+<img src="pictures/picture 31.png">
+<img src="pictures/picture 32.png">
+<img src="pictures/picture 33.png">
+<img src="pictures/picture 34.png">
 
 19.Tunggu konfigurasi sampai selesai
-<img src="picture 35.png">
+<img src="pictures/picture 35.png">
 
 20.Setelah selesai,pilih yes pada participate in the package,pada software selection biarkan default
-<img src="picture 36.png">
-<img src="picture 37.png">
+<img src="pictures/picture 36.png">
+<img src="pictures/picture 37.png">
 
 21.Tunggu sampai proses installasi software selesai(membutuhkan waktu sedikit lama)
-<img src="picture 38.png">
+<img src="pictures/picture 38.png">
 
 22.Setelah selesai,pilih /dev/sda kemudian di halaman finish,klik continue dan debian sudah terinstall
-<img src="picture 39.png">
-<img src="picture 40.png">
-<img src="picture 41.png">
+<img src="pictures/picture 39.png">
+<img src="pictures/picture 40.png">
+<img src="pictures/picture 41.png">
 
 # Referensi
 
