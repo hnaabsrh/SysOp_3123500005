@@ -12,8 +12,8 @@
         <strong>Ragil Ridho Saputra (3122500016)</strong>
     </p>
 
-Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
-Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024
+<h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
+Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
     <hr>
     <hr>
 </div>
@@ -21,7 +21,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024
 ## Daftar Isi
 1. [Pendahuluan](#Pendahuluan)
 2. [Komposisi Motherboard](#Komposisi-Motherboard)
-3. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy&uefi)
+3. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy-&-UEFI)
 4. [Referensi](#Referensi)
 
 # Pendahuluan
