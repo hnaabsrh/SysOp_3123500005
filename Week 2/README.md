@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 style="text-align: center;font-weight: bold">Praktikum 1<br>SysOp</h1>
+    <h1 style="text-align: center;font-weight: bold">Praktikum 2<br>SysOp</h1>
     <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
@@ -12,8 +12,8 @@
         <strong>Ragil Ridho Saputra (3122500016)</strong>
     </p>
 
-    <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
-        Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
+Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
+Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024
     <hr>
     <hr>
 </div>
