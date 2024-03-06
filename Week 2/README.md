@@ -19,12 +19,12 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024
 </div>
 
 ## Daftar Isi
-1. [Pendahuluan](#Motherboard-Legacy&UEFI)
+1. [Pendahuluan](#Pendahuluan)
 2. [Komposisi Motherboard](#Komposisi-Motherboard)
 3. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy&UEFI)
 4. [Referensi](#Referensi)
 
-# Motherboard Legacy&UEFI
+# Pendahuluan
 Motherboard adalah papan sirkuit utama yang terdapat di dalam sebuah komputer. Motherboard adalah komponen yang memiliki tugas utama untuk mendistribusikan listrik dan memfasilitasi komunikasi antar perangkat komputer ataupun perangkat periferal. Motherboard menjadi tulang punggung utama proses komunikasi antar perangkat CPU (Central Processing Unit), RAM (Random Access Memory), memori penyimpanan, dan seluruh komponen lain dari perangkat keras komputer. Motherboard dapat ditemukan di hampir semua komputer, terutama desktop PC dan laptop. Komponen komputer yang terhubung di Motherboard antara lain, seperti CPU, memori, GPU, Ethernet Card, dan Audio Card.
 
 Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih dibanding sistem Legacy. UEFI menggunakan firmware URFI untuk menyimpan EFI Service Partitions saat proses booting berlangsung. 
@@ -86,9 +86,9 @@ Namun, pada Legacy, tak ada keamanan yang disediakan saat booting berlangsung, s
 dimuat serta terjadi dual-boot.
 
 # Referensi
-[Motherboard]([https://www.debian.org/download](https://tekno.kompas.com/read/2023/11/12/17150087/pengertian-motherboard-lengkap-dengan-fungsi-komponen-cara-kerja-dan-jenisnya?page=all#google_vignette)https://tekno.kompas.com/read/2023/11/12/17150087/pengertian-motherboard-lengkap-dengan-fungsi-komponen-cara-kerja-dan-jenisnya?page=all#google_vignette)
+[Motherboard](https://tekno.kompas.com/read/2023/11/12/17150087/pengertian-motherboard-lengkap-dengan-fungsi-komponen-cara-kerja-dan-jenisnya?page=all#google_vignette)
   
-[Legacy & UEFI]([https://www.virtualbox.org/wiki/Downloads](https://kumparan.com/how-to-tekno/perbedaan-uefi-dan-legacy-simak-penjelasannya-di-sini-20b8sBrgRs4/3)https://kumparan.com/how-to-tekno/perbedaan-uefi-dan-legacy-simak-penjelasannya-di-sini-20b8sBrgRs4/3)
+[Legacy & UEFI](https://kumparan.com/how-to-tekno/perbedaan-uefi-dan-legacy-simak-penjelasannya-di-sini-20b8sBrgRs4/3)
   
-[Foto Legacy & UEFI]([https://inigadgets.com/mengenal-apa-itu-booting/](https://qwords.com/blog/apa-itu-uefi-dan-legacy/)https://qwords.com/blog/apa-itu-uefi-dan-legacy/)
+[Foto Legacy & UEFI](https://qwords.com/blog/apa-itu-uefi-dan-legacy/)
 
