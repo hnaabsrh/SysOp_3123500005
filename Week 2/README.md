@@ -21,7 +21,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 ## Daftar Isi
 1. [Pendahuluan](#Pendahuluan)
 2. [Komposisi Motherboard](#Komposisi-Motherboard)
-3. [Perbedaan Legacy dan uefi](#Perbedaan-Legacy-dan-uefi)
+3. [Perbedaan Legacy UEFI](#Perbedaan-Legacy-UEFI)
 4. [Referensi](#Referensi)
 
 # Pendahuluan
