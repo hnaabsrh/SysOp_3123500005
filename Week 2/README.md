@@ -62,7 +62,7 @@ Sementara, Legacy adalah proses booting komputer dengan firmware BIOS yang lebih
 konfigurasi.
 <img src="CMOS.jpeg">
 
-# Perbedaan Legacy&UEFI
+# Perbedaan Legacy UEFI
 
 <img src="UEFI-vs-Legacy.png">
 
