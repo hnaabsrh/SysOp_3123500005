@@ -14,8 +14,6 @@
 
     <h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
         Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
-    <hr>
-    <hr>
 </div>
 
 ## Daftar Isi
