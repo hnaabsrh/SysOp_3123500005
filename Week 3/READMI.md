@@ -43,19 +43,19 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 ![App Screenshot](runflopsiops.jpg)
 
 1. Ragil
-   Percobaan FLOPS64 5 kali
+   Percobaan FLOPS64 5 kali<br>
    ![App Screenshot](flopsragil.jpg)
-   Percobaan IOPS64 5 kali
+   Percobaan IOPS64 5 kali<br>
    ![App Screenshot](iopsragil.jpg)
 2. Hana
-   Percobaan FLOPS64 5 kali
+   Percobaan FLOPS64 5 kali<br>
    ![App Screenshot](flopshana.jpg)
-   Percobaan IOPS64 5 kali
+   Percobaan IOPS64 5 kali<br>
    ![App Screenshot](iopshana.jpg)
 3. Dio
-   Percobaan FLOPS64 5 kali
+   Percobaan FLOPS64 5 kali<br>
    ![App Screenshot](flopsdio.jpg)
-   Percobaan IOPS64 5 kali
+   Percobaan IOPS64 5 kali<br>
    ![App Screenshot](iopsdio.jpg)
 
 ### Tabel Pengujian
@@ -65,6 +65,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 | Ragil        | 6.2                   | 5.5                  | 23.2          | 22           |
 | Hana         | 6                     | 6.6                  | 12.1          | 13.2         |
 | Dio          | 10.8                  | 10.1                 | 21.6          | 20.2         |
+| hawa
 
 #### Analisa
 
