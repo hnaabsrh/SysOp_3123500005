@@ -30,7 +30,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 ## PPT
 
-[Link PPT](https://www.canva.com/design/DAF_Q_JAZRc/1YQf9QPoVgKrltv7AMoDbQ/edit?utm_content=DAF_Q_JAZRc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Link PPT](https://www.canva.com/design/DAF_Q_JAZRc/i6EOGG2lMCJPxMgpVESW0g/view?utm_content=DAF_Q_JAZRc&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## FlOPS dan IOPS
 
