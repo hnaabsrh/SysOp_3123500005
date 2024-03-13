@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 style="text-align: center;font-weight: bold">Praktikum 2<br>SysOp</h1>
+    <h1 style="text-align: center;font-weight: bold">Praktikum 3<br>SysOp</h1>
     <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
@@ -65,7 +65,6 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 | Ragil        | 6.2                   | 5.5                  | 23.2          | 22           |
 | Hana         | 6                     | 6.6                  | 12.1          | 13.2         |
 | Dio          | 10.8                  | 10.1                 | 21.6          | 20.2         |
-| hawa
 
 #### Analisa
 
