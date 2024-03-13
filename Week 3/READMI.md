@@ -1,78 +1,86 @@
 <div align="center">
-    <h1 style="text-align: center;font-weight: bold">Praktikum 1<br>SysOp</h1>
-    <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
+  <h1 class="text-align: center;font-weight: bold">Praktikum 3<br>Praktek System Operasi</h1>
+  <h3 class="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h3>
 </div>
 <br />
 <div align="center">
-    <img src="Logo_PENS.png" alt="Logo PENS">
-    <h3 style="text-align: center;">Disusun Oleh : </h3>
-    <p style="text-align: center;">
-        <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
-        <strong>Dio Ramadhan Widya Pamungkas (3123500011)</strong><br>
-        <strong>Ragil Ridho Saputra (3122500016)</strong>
-    </p>
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
+  <h3 style="text-align: center;">Disusun Oleh : </h3>
+  <p style="text-align: center;">
+    <strong>Dewangga Wahyu Putera Wangsa (3123500007)</strong><br>
+    <strong>Hawa Kharisma Zahara (3123500010)</strong><br>
+    <strong>Bayu Ariyo Vonda Wicaksono (3122500017)</strong>
+  </p>
 
-    <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
-        Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
-    <hr>
-    <hr>
+<h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
+  <hr><hr>
 </div>
 
 ## Daftar Isi
-1. [Komposisi Motherboard](#Komposisi-Motherboard)
-2. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy&UEFI)
 
-# Komposisi Motherboard
-1. *Socket CPU*: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
-<img src="socket CPU.jpeg">
+1. [PPT](#ppt)
+2. [FLOPS dan IOPS](#flops-dan-iops)
+   - [Install gcc, make, dan git](#install-gcc-make-dan-git)
+   - [How to run FLOPS dan IOPS](#how-to-run-flops-dan-iops)
+   - [Tabel Pengujian](#tabel-pengujian)
+   - [Analisa](#analisa)
+3. [Referensi](#referensi)
 
-2. *BIOS (Basic Input-Output System)*: Program dasar yang menghubungkan motherboard dengan sistem operasi.
-<img src="BIOS.jpg">
+## PPT
 
-3. *North Bridge Controller*: Menghubungkan slot RAM, AGP, dan socket CPU.
-<img src="nourth south.PNG">
+[Link PPT](https://www.canva.com/design/DAF_FjVZneE/mGYFV4pIDyYAnDvjwu0qfg/view?utm_content=DAF_FjVZneE&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-4. *South Bridge Controller*: Mengatur peripheral seperti USB, keyboard, IDE controller, dll.
-<img src="nourth south.PNG">
+## FlOPS dan IOPS
 
-5. *Konektor Power Supply Unit*: Menyambungkan motherboard dengan power supply, AT atau ATX.
-<img src="konektor powersupply.jpeg">
+### Install GCC, make, dan GIT
 
-6. *Slot RAM*: Tempat meletakkan RAM, saat ini menggunakan tipe DDR3.
-<img src="slot RAM.jpeg">
+![App Screenshot](assets/img/install_gcc_make_git.png)
 
-7. *Slot PCI*: Tempat untuk Add-on Card seperti LAN, sound, dan TV Tuner.
-<img src="slot PCI.jpeg">
+### How to run FLOPS dan IOPS
 
-8. *Slot AGP (Accelerated Graphics Port)*: Untuk AGP Card yang menampilkan grafis.
-<img src="slot AGP.jpeg">
+![App Screenshot](assets/img/run_flops_iops.jpg)
 
-9. *Slot IDE dan SATA*: IDE untuk harddisk atau floppy disk, SATA untuk serial ATA.
-<img src="IDE SATA.jpeg">
+1. Awang
+   Percobaan FLOPS64 5 kali
+   ![App Screenshot](assets/img/awang_flops.jpg)
+   Percobaan IOPS64 5 kali
+   ![App Screenshot](assets/img/awang_iops.jpg)
+2. Hawa
+   Percobaan FLOPS64 5 kali
+   ![App Screenshot](assets/img/flops64_1.png)
+   ![App Screenshot](assets/img/flops64_2.png)
+   Percobaan IOPS64 5 kali
+   ![App Screenshot](assets/img/flops64_3.png)
+   ![App Screenshot](assets/img/flops64_4.png)
+3. Vonda
+   Percobaan FLOPS64 5 kali
+   ![App Screenshot](assets/img/vonda1.png)
+   ![App Screenshot](assets/img/vonda2.png)
+   Percobaan IOPS64 5 kali
+   ![App Screenshot](assets/img/vonda3.png)
+   ![App Screenshot](assets/img/vonda4.png)
 
-10. *CMOS (Complementary Metal Oxide Semiconductor)*: Baterai yang memberi daya pada memori untuk pengaturan
-konfigurasi.
-<img src="CMOS.jpeg">
+### Tabel Pengujian
 
-# Perbedaan Legacy&UEFI
+| Nama Anggota | Max Single Core FLOPS | Max Single Core IOPS | Max CPU FLOPS | Max CPU IOPS |
+| ------------ | --------------------- | -------------------- | ------------- | ------------ |
+| Awang        | 5.3                   | 5.2                  | 10.5          | 10.3         |
+| Hawa         | 2.2                   | 1.9                  | 4.3           | 3.8          |
+| Vonda        | 6                     | 4.5                  | 11.9          | 9            |
 
-<img src="UEFI-vs-Legacy.png">
+#### Analisa
 
-1. Definisi
-Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih
-dibanding sistem Legacy. UEFI menggunakan firmware URFI untuk menyimpan EFI Service Partitions saat proses booting
-berlangsung.
-Sementara, Legacy adalah proses booting komputer dengan firmware BIOS yang lebih lama dan tradisional.
-2. Waktu yang Dibutuhkan
-UEFI membutuhkan waktu booting yang lebih cepat. Sedangkan, Legacy lebih lama.
-3. Dukungan untuk Penyimpanan
-UEFI sudah menggunakan partisi GUID Partition Table (GTP), sehingga dapat mendukung perangkat penyimpanan hingga 9
-zettabytes.
-Legacy yang masih menggunakan dukungan Master Boot Record (MBR) dapat mendukung perangkat penyimpanan komputer hanya 2
-TB.
-4. Keamanan
-UEFI dapat mencegah pemuatan aplikasi yang tak sah atau dicurigai. Selain itu juga dapat menghambat adanya kerja dua
-boot karena UEFI menganggap sistem operasi adalah aplikasi.
-ADVERTISEMENT
-Namun, pada Legacy, tak ada keamanan yang disediakan saat booting berlangsung, sehingga ada kemungkinan aplikasi tak sah
-dimuat serta terjadi dual-boot.
+Dari data yang ditunjukkan oleh table diatas menunjukkan bahwa setiap laptop dengan ketidaksamaan processor menyebabkan hasil dari test FLOPS dan IOPS berbeda-beda tergantung kecepatan dari masing-masing CPU/processor.
+Mulai dari **Awang** dengan spesifikasi **Processor 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz, 2995 Mhz, 2 Core(s), 4 Logical Processor(s)**, untuk spesifikasi yang ada di debian menggunakan 2 core, bisa memperoleh angka 5.3 Gigaflops dan 5.2 Gigaiops di single core dan Max CPU berada di angka 10.5 Gigaflops dan 10.3 Gigaiops.
+Lalu **Hawa** dengan spesifikasi **Processor Intel(R) Celeron(R) N4000 CPU @ 1.10GHz, 1101 Mhz, 2 Core(s), 2 Logical Processor(s)**, untuk spesifikasi yang ada di debian menggunakan 2 core, bisa memperoleh angka 4.3 Gigaflops dan 3.8 Gigaiops di single core dan Max CPU berada di angka 2.2 Gigaflops dan 1.9 Gigaiops.
+lalu **vonda** dengan spesifikasi **13th Gen Intel(R) Core(TM) i5-13500H, 2600 Mhz, 12 Core(s), 16 Logical Proces**, untuk spesifikasi yang ada di debian menggunakan 2 core, bisa memperoleh angka 6 Gigaflops dan 4.5 Gigaiops di single core dan Max CPU berada di angka 11.9 Gigaflops dan 9 Gigaiops.
+
+### Kesimpulan
+
+Dari percobaan kelompok kami, bisa ditarik kesimpulan bahwa Perbandingan antara FLOPS dan IOPS tidak langsung karena keduanya mengukur aspek yang berbeda dari kinerja sistem komputasi. FLOPS lebih berkaitan dengan kemampuan prosesor untuk melakukan perhitungan matematika, sedangkan IOPS lebih berkaitan dengan kemampuan sistem penyimpanan untuk mengakses dan memanipulasi data. Meskipun keduanya merupakan ukuran kinerja yang penting dalam konteks tertentu, mereka tidak dapat secara langsung dibandingkan atau ditukar-tukar karena masing-masing mengukur aspek yang berbeda dari kinerja sistem komputasi.
+
+## Referensi
+
+- [Apa itu CPU?](https://www.youtube.com/watch?v=Z5JC9Ve1sfI)
+- [Siklus CPU](https://www.youtube.com/watch?v=jFDMZpkUWCw)
+- [FLOPS dan IOPS](https://github.com/ferryastika/flops-iops)
