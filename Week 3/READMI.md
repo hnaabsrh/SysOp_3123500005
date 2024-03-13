@@ -42,21 +42,21 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 ![App Screenshot](runflopsiops.jpg)
 
-1. Ragil
+1. Ragil<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](flopsragil.jpg)
+   ![App Screenshot](flopsragil.jpg)<br>
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](iopsragil.jpg)
-2. Hana
+   ![App Screenshot](iopsragil.jpg)<br>
+2. Hana<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](flopshana.jpg)
+   ![App Screenshot](flopshana.jpg)<br>
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](iopshana.jpg)
-3. Dio
+   ![App Screenshot](iopshana.jpg)<br>
+3. Dio<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](flopsdio.jpg)
+   ![App Screenshot](flopsdio.jpg)<br>
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](iopsdio.jpg)
+   ![App Screenshot](iopsdio.jpg)<br>
 
 ### Tabel Pengujian
 
@@ -77,6 +77,6 @@ Berdasarkan hasil pengujian kelompok kami, kinerja sistem bervariasi tergantung 
 
 ## Referensi
 
-- [Apa itu CPU?](https://www.youtube.com/watch?v=Z5JC9Ve1sfI)
-- [Siklus CPU](https://www.youtube.com/watch?v=jFDMZpkUWCw)
+- [What's Your Computer Actually Doing?](https://www.youtube.com/watch?v=Z5JC9Ve1sfI)
+- [Fetch Decode Execute Cycle in more detail](https://www.youtube.com/watch?v=jFDMZpkUWCw)
 - [FLOPS dan IOPS](https://github.com/ferryastika/flops-iops)
