@@ -22,15 +22,15 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 1. [PPT](#ppt)
 2. [FLOPS dan IOPS](#flops-dan-iops)
-   - [Install gcc, make, dan git](#install-gcc-make-dan-git)
-   - [How to run FLOPS dan IOPS](#how-to-run-flops-dan-iops)
-   - [Tabel Pengujian](#tabel-pengujian)
-   - [Analisa](#analisa)
+   [Install gcc, make, dan git](#install-gcc-make-dan-git)
+   [How to run FLOPS dan IOPS](#how-to-run-flops-dan-iops)
+   [Tabel Pengujian](#tabel-pengujian)
+   [Analisa](#analisa)
 3. [Referensi](#referensi)
 
 ## PPT
 
-[Link PPT](https://www.canva.com/design/DAF_FjVZneE/mGYFV4pIDyYAnDvjwu0qfg/view?utm_content=DAF_FjVZneE&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[Link PPT](https://www.canva.com/design/DAF_Q_JAZRc/1YQf9QPoVgKrltv7AMoDbQ/edit?utm_content=DAF_Q_JAZRc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## FlOPS dan IOPS
 
