@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 style="text-align: center;font-weight: bold">Praktikum 1<br>SysOp</h1>
+    <h1 style="text-align: center;font-weight: bold">Praktikum 2<br>SysOp</h1>
     <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
@@ -12,15 +12,28 @@
         <strong>Ragil Ridho Saputra (3122500016)</strong>
     </p>
 
-    <h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
-        Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
+<h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
+Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
+    <hr>
+    <hr>
 </div>
 
 ## Daftar Isi
-1. [Komposisi Motherboard](#Komposisi-Motherboard)
-2. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy&UEFI)
+1. [Pendahuluan](#Pendahuluan)
+2. [Komposisi Motherboard](#Komposisi-Motherboard)
+3. [Perbedaan Legacy UEFI](#Perbedaan-Legacy-UEFI)
+4. [Referensi](#Referensi)
+
+# Pendahuluan
+Motherboard adalah papan sirkuit utama yang terdapat di dalam sebuah komputer. Motherboard adalah komponen yang memiliki tugas utama untuk mendistribusikan listrik dan memfasilitasi komunikasi antar perangkat komputer ataupun perangkat periferal. Motherboard menjadi tulang punggung utama proses komunikasi antar perangkat CPU (Central Processing Unit), RAM (Random Access Memory), memori penyimpanan, dan seluruh komponen lain dari perangkat keras komputer. Motherboard dapat ditemukan di hampir semua komputer, terutama desktop PC dan laptop. Komponen komputer yang terhubung di Motherboard antara lain, seperti CPU, memori, GPU, Ethernet Card, dan Audio Card.
+
+Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih dibanding sistem Legacy. UEFI menggunakan firmware URFI untuk menyimpan EFI Service Partitions saat proses booting berlangsung. 
+Sementara, Legacy adalah proses booting komputer dengan firmware BIOS yang lebih lama dan tradisional. 
 
 # Komposisi Motherboard
+Motherboard adalah wadah dari berbagai komponen elektronik yang saling terjalin untuk membuat perangkat PC bekerja. Pada motherboard terdapat chip BIOS atau program penggerak dan konektor yang digunakan untuk menghubungkan setiap perangkat. Motherboard memiliki fungsi utama sebagai pusat penghubung antar perangkat yang terpasang pada sebuah PC. Antara motherboard dan bagian-bagiannya dapat menghubungkan kode-kode yang akan difungsikan menjadi sebuah kinerja pada perangkat komputer.
+
+Motherboard memiliki beberapa bagian sebagai berikut:
 1. *Socket CPU*: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
 <img src="socket CPU.jpeg">
 
@@ -52,7 +65,7 @@
 konfigurasi.
 <img src="CMOS.jpeg">
 
-# Perbedaan Legacy&UEFI
+# Perbedaan Legacy UEFI
 
 <img src="UEFI-vs-Legacy.png">
 
@@ -74,3 +87,13 @@ boot karena UEFI menganggap sistem operasi adalah aplikasi.
 ADVERTISEMENT
 Namun, pada Legacy, tak ada keamanan yang disediakan saat booting berlangsung, sehingga ada kemungkinan aplikasi tak sah
 dimuat serta terjadi dual-boot.
+
+# Referensi
+[Motherboard](https://tekno.kompas.com/read/2023/11/12/17150087/pengertian-motherboard-lengkap-dengan-fungsi-komponen-cara-kerja-dan-jenisnya?page=all#google_vignette)
+
+[Komposisi Motherboard](https://www.baktikominfo.id/id/informasi/pengetahuan/fungsi_motherboard_beserta_bagian-bagiannya_untuk_memaksimalkan_kinerja_komputer-751)
+  
+[Legacy & UEFI](https://kumparan.com/how-to-tekno/perbedaan-uefi-dan-legacy-simak-penjelasannya-di-sini-20b8sBrgRs4/3)
+  
+[Foto Legacy & UEFI](https://qwords.com/blog/apa-itu-uefi-dan-legacy/)
+
