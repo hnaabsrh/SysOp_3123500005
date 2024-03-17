@@ -37,10 +37,30 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 ### Install GCC, make, dan GIT
 
 ![App Screenshot](installmakegit.jpg)
+Deskripsi:
+<br>Gambar diatas merupakan penginstalan gcc,make dan git pada linux
+<br>-GCC berguna sebagai compiler untuk menjalankan program flops iops yang menggunakan bahasa C
+<br>-make berguna untuk melakukan compile sebuah kode program sehingga bisa di gunakan
+<br>-GIT berguna untuk mengunduh file yang ada di dalam github
+<br>Langkah-langkah nya sebagai berikut:
+1. Buka terminal pada linux
+2. Lalu ketikkan perintah "sudo apt-get install gcc make git" dan tekan enter
+3. Setelah itu tunggu proses installasi sampai selesai dan bila ada pemberitahuan untuk continue,silahkan yes
 
 ### How to run FLOPS dan IOPS
 
 ![App Screenshot](runflopsiops.jpg)
+<br>Deskripsi:
+<br>Gambar diatas merupakan bagaimana cara untuk menjalan kan program flops dan iops
+<br>Berikut adalah langkah-langkah nya:
+1. Setelah menginstall git,gcc,dan make maka lalukan git clone kepada github bapak ferry astika
+2. Selanjutnya lakukan perintah cd flops-iops
+3. Kemudian lakukan perintah make, make clean, sudo make install
+4. Setelah selesai,lakukan perintah flops64 dan enter.Lalu masukkan jumlah core cpu untuk di benchmark
+5. Untuk menjalankan iops,maka lakukan perintah iops64 dan masukkan jumlah core cpu untuk di benchmark
+6. Lakukan benchmark flops dan iops masing masing sebanyak 5 kali
+<br>
+
 
 1. Ragil<br>
    Percobaan FLOPS64 5 kali<br>
