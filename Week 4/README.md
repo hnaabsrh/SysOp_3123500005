@@ -1,3 +1,22 @@
+<div align="center">
+    <h1 style="text-align: center;font-weight: bold">Praktikum 4<br>SysOp</h1>
+    <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
+</div>
+<br />
+<div align="center">
+    <img src="Logo_PENS.png" alt="Logo PENS">
+    <h3 style="text-align: center;">Disusun Oleh : </h3>
+    <p style="text-align: center;">
+        <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
+        <strong>Dio Ramadhan Widya Pamungkas (3123500011)</strong><br>
+        <strong>Ragil Ridho Saputra (3122500016)</strong>
+    </p>
+
+<h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
+Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
+    <hr>
+    <hr>
+</div>
 
 ## POKOK BAHASAN:
 ```
@@ -87,6 +106,28 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 2. Apa yang dimaksud pipeline?
 3. Apa yang dimaksud perintah di bawah ini :
     echo, cat, more, sort, grep, wc, cut, uniq
+
+## Jawaban :
+
+1. <b>Redirection (Pembelokan) :</b> 
+Redirection adalah teknik mengalihkan input atau output dari standarnya.
+2. <b>Pipeline (Pipa):</b>
+ Mekanisme pipa digunakan sebagai alat komunikasi antar proses.
+ Input => Proses 1 => Output = Input => Proses 2 => Output
+Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Proses 2. Hubungan output input ini dinamakan pipa, yang menghubungkan Proses 1 dengan Proses 2 dan dinyatakan dengan symbol "|".
+   ```
+   Proses1 | Proses
+   ```
+3. Yang dimaksud perintah di bawah ini adalah :
+<br><b>echo :</b> Menampilkan text 
+<br><b>cat :</b> Membaca file dan menampilkan isinya
+<br><b>more :</b> Melihat isi suatu file dengan fasilitas melihat isi file dari atas dan untuk kebawah menggunakan tombol Enter untuk perbaris dan tombol Spasi untuk perlayar 
+<br><b>sort :</b> Digunakan untuk mengurutkan masukannya berdasarkan urutan nomor ASCII dari karakter 
+<br><b>grep :</b> Digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan
+<br><b>wc :</b> Digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya. Untuk mengetahui berapa baris gunakan option -l. Untuk mengetahui berapa kata, gunakan option -w dan untuk mengetahui berapa karakter, gunakan option -c. Jika salah satu option tidak digunakan, maka tampilannya adalah jumlah baris, jumlah kata dan jumlah karakter
+<br><b>cut :</b> Digunakan untuk mengambil  kolom tertentu dan baris-baris masukannya, yang ditentukan pada opinion -c 
+<br><b>uniq :</b> Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan sort
+<br>
 
 ## PERCOBAAN:
 
