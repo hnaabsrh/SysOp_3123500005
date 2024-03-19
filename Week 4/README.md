@@ -155,7 +155,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     [Ctrl-d]
    ```
 
-   ![App Screenshot](img/percobaan1_2.png)
+   ![App Screenshot](pcb1.2.png)
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
@@ -163,7 +163,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ mkdir mydir **(Terdapat pesan error)**
    ```
 
-   ![App Screenshot](img/percobaan1_3.png)
+   ![App Screenshot](pcb1.3.png)
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -172,7 +172,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     Ini adalah teks yang saya simpan ke file myfile.txt
    ```
 
-   ![App Screenshot](img/percobaan2_1.png)
+   ![App Screenshot](pcb2.1.png)
 
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
@@ -180,7 +180,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat myfile.txt
    ```
 
-   ![App Screenshot](img/percobaan2_2.png)
+   ![App Screenshot](pcb2.2.png)
 
 3. Pembelokan standar error untuk disimpan di file
    ```
@@ -189,7 +189,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat myerror.txt
    ```
 
-   ![App Screenshot](img/percobaan2_3.png)
+   ![App Screenshot](pcb2.3.png)
 
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
@@ -200,7 +200,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat out.txt
    ```
 
-   ![App Screenshot](img/percobaan2_4.png)
+   ![App Screenshot](pcb2.4.png)
 
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
@@ -209,7 +209,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat baru
    ```
 
-   ![App Screenshot](img/percobaan2_5.png)
+   ![App Screenshot](pcb2.5.png)
 
 6. Notasi >> (append)
    ```
@@ -221,7 +221,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat surat
    ```
 
-   ![App Screenshot](img/percobaan2_6.png)
+   ![App Screenshot](pcb2.6.png)
 
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
@@ -237,14 +237,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    %%%
    ```
 
-   ![App Screenshot](img/percobaan2_7.png)
+   ![App Screenshot](pcb2.7.png)
 
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
    ```
    $ cat myfile.txt – surat
    ```
 
-   ![App Screenshot](img/percobaan2_8.png)
+   ![App Screenshot](pcb2.8.png)
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -260,8 +260,10 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ ls –l /etc | sort | more
    ```
 
-   ![App Screenshot](img/percobaan3_1(1).png)
-   ![App Screenshot](img/percobaan3_1(2).png)
+   ![App Screenshot](pcb3.1.png)
+   ![App Screenshot](pcb3.111.png)
+   ![App Screenshot](pcb3.11.png)
+   ![App Screenshot](pcb3.1111.png)
 
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
@@ -270,7 +272,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat output
    ```
 
-   ![App Screenshot](img/percobaan3_2.png)
+   ![App Screenshot](pcb3.2.png)
 
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
@@ -278,14 +280,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat output
    ```
 
-   ![App Screenshot](img/percobaan3_3.png)
+   ![App Screenshot](pcb3.3.png)
 
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
 
-   ![App Screenshot](img/percobaan3_4.png)
+   ![App Screenshot](pcb3.4.png)
 
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
@@ -300,7 +302,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat out
    ```
 
-   ![App Screenshot](img/percobaan3_5.png)
+   ![App Screenshot](pcb3.5.png)
 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -327,30 +329,32 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat kelas.txt | sort | uniq
    ```
 
-   ![App Screenshot](img/percobaan4_1(1).png)
-   ![App Screenshot](img/percobaan4_1(2).png)
+   ![App Screenshot](pcb4.1.png)
+   ![App Screenshot](pcb4.11.png)
+   ![App Screenshot](pcb4.111.png)
 
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
 
-   ![App Screenshot](img/latihan_1.png)
+   ![App Screenshot](lat1.png)
+   ![App Screenshot](lat11.png)
 
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
 
-   ![App Screenshot](img/latihan_2.png)
+   ![App Screenshot](lat2.png)
 
 3. Urutkan file baru dengan cara membelokkan standard input.
 
-   ![App Screenshot](img/latihan_3.png)
+   ![App Screenshot](lat3.png)
 
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
 
-   ![App Screenshot](img/latihan_4.png)
+   ![App Screenshot](lat4.png)
 
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
 
-   ![App Screenshot](img/latihan_5.png)
+   ![App Screenshot](lat5.png)
 
 6. Urutkan kalimat berikut :
    ```
@@ -363,11 +367,12 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
    Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
 
-   ![App Screenshot](img/latihan_6.png)
+   ![App Screenshot](lat6.png)
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 
-   ![App Screenshot](img/latihan_7.png)
+   ![App Screenshot](lat7.png)
+   ![App Screenshot](lat77.png)
 
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -383,7 +388,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
 
-   ![App Screenshot](img/latihan_8.png)
+   ![App Screenshot](lat8.png)
 
 ## LAPORAN RESMI:
 
