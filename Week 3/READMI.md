@@ -63,16 +63,23 @@ Deskripsi:
 
 
 1. Ragil<br>
+   Spesifikasi:
+   <br>
+   AMD Ryzen 5 6600H with Radeon Graphics dan jumlah core 4<br>
    Percobaan FLOPS64 5 kali<br>
    ![App Screenshot](flopsragil.jpg)<br>
    Percobaan IOPS64 5 kali<br>
    ![App Screenshot](iopsragil.jpg)<br>
 2. Hana<br>
+   Spesifikasi:<br>
+   Intel Core i7-8650U dan jumlah core 4<br>
    Percobaan FLOPS64 5 kali<br>
    ![App Screenshot](flopshana.jpg)<br>
    Percobaan IOPS64 5 kali<br>
    ![App Screenshot](iopshana.jpg)<br>
 3. Dio<br>
+   Spesifikasi:<br>
+   AMD Ryzen 7 4800H with Radeon Graphics dan jumlah core 2
    Percobaan FLOPS64 5 kali<br>
    ![App Screenshot](flopsdio.jpg)<br>
    Percobaan IOPS64 5 kali<br>
