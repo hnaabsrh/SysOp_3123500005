@@ -145,6 +145,10 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     ```
 
    ![App Screenshot](pcb1.1.png)
+   <br>
+   Analisis: 
+    <br>Perintah ps digunakan untuk menampilkan daftar proses yang sedang berjalan di sistem operasi. Outputnya memuat informasi tentang setiap proses, seperti:<br>
+    PID (Process ID): Untuk mengidentifikasi setiap proses unik, TTY (TeleType): Terminal yang terkait dengan proses, TIME: Waktu CPU kumulatif yang digunakan oleh proses, dalam format menit dan detik, CMD (Command): Nama program atau perintah yang memulai proses.<br>
 2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
     $ cat
@@ -156,6 +160,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb1.2.png)
+   <br>
+    Analisis:
+    <br>Cat digunakan untuk menampilkan konten dan dapat dihentikan dengan menekan Ctrl-D.<br>
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
@@ -164,6 +171,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb1.3.png)
+   <br>
+    Analisis:
+    <br>mkdir adalah perintah untuk membuat direktori baru dan bila terjadi error maka akan tampil di layar.<br>
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -173,6 +183,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.1.png)
+   <br>
+    Analisis:
+    <br>Perintah cat1> myfile.txt digunakan untuk mengcopy input dan menyimpannya didalam myfile.txt.<br>
 
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
@@ -181,6 +194,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.2.png)
+   <br>
+   Analisis:
+   <br>Perintah cat 0> digunakan untuk menunjuk sebuah input yang berasal dari myfile.<br>
 
 3. Pembelokan standar error untuk disimpan di file
    ```
@@ -190,6 +206,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.3.png)
+   <br>
+    Analisis:
+    <br>Jika terdapat pesan error didirectory maka akan dialihkan ke file my error menggunakan 2><br>
 
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
@@ -201,6 +220,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.4.png)
+   <br>
+   Analisis:
+   <br>Membelokkan error menggunakan 2>&1, dan mengarahkan standar error ke dalam file out,txt<br>
 
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
@@ -210,6 +232,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.5.png)
+   <br>
+   Analisis:
+   <br>Perintah echo digunakan untuk menulis teks ke dalam file baru menggunakan operator >. Kemudian pesan dari echo akan dimasukkan ke dalam file baru. cat biasanya digunakan untuk menampilkan isi dari file       atau standar input.<br>
 
 6. Notasi >> (append)
    ```
@@ -222,6 +247,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.6.png)
+   <br>
+   Analisis:
+   <br>Menginputkan teks menggunakan perintah echo dan mengirimkan teks tersebut ke surat. Untuk mengakhiri input teks, menggunakan notasi >><br>
 
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
@@ -238,6 +266,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.7.png)
+   <br>
+   Analisis:
+   <br>Menginputkan sebuah teks dengan perintah cat <<++ dan cat <<%%%, dan ketika selesai input, harus memberikan batasan yang sama seperti contoh perintah ++ dan %%%.<br>
 
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
    ```
@@ -245,6 +276,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb2.8.png)
+   <br>
+    Analisis:
+    <br>Perintah $ cat  myfile.txt untuk menampilkan isi dua file. Pertama, perintah cat akan menampilkan isi file myfile.txt. Kemudian, perintah cat akan menampilkan isi file surat yang disimpan ke file      myfile.txt<br>
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -264,7 +298,17 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ![App Screenshot](pcb3.111.png)
    ![App Screenshot](pcb3.11.png)
    ![App Screenshot](pcb3.1111.png)
-
+   <br>
+   Analisis:
+   <br>Perintah who menampilkan daftar pengguna yang sedang masuk (logged in) ke sistem.<br>
+   <br>Menggunakan operator pipe (|), perintah who diarahkan ke perintah sort, yang kemudian mengurutkan daftar pengguna sesuai abjad berdasarkan nama pengguna.<br>
+   <br>Perintah who | sort -r mengurutkan daftar pengguna secara terbalik (dari belakang ke depan).<br>
+   <br>Menggunakan operator redirection (>), output dari perintah who dialihkan ke dalam file tmp, menyimpan daftar pengguna yang sedang masuk ke dalam file tersebut.<br>
+   <br>Perintah sort tmp mengurutkan isi dari file tmp, yang berisi daftar pengguna yang sedang masuk sesuai urutan abjad.<br>
+   <br>Perintah rm tmp menghapus file tmp yang sudah tidak diperlukan lagi setelah penggunaan sebelumnya.<br>
+   <br>Perintah ls -l /etc | more menampilkan daftar isi dari direktori /etc secara lebih detail dengan perintah ls -l, dan outputnya dialihkan ke program more.<br>
+   <br>Perintah ls -l /etc | sort | more mengurutkan daftar isi dari perintah sebelumnya sebelum outputnya ditampilkan oleh more.<br>
+  
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
    $ echo hello
@@ -273,6 +317,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb3.2.png)
+   <br>
+   Analisis:
+   <br>Perintah ($ echo hello) akan menampilkan teks "hello" di terminal pada baris pertama. Tanda > digunakan untuk mengarahkan output dari perintah echo ke dalam file output yang menampilkan "hello".<br>
 
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
@@ -281,6 +328,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb3.3.png)
+   <br>
+   Analisis:
+   <br>Perintah ($ echo bye >> output) akan menambahkan teks "bye" ke dalam file. Tanda >> digunakan untuk menambahkan teks ke akhir file tanpa menghapus konten yang sudah ada, sehingga akan menampilkan "hello" dan "bye" pada baris yang berbeda.<br>
 
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
@@ -288,6 +338,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](pcb3.4.png)
+   <br>
+  Analisis:
+  <br>Tanda < digunakan untuk mengarahkan input kedalam suatu file lainnya<br>
 
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
@@ -332,6 +385,16 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ![App Screenshot](pcb4.1.png)
    ![App Screenshot](pcb4.11.png)
    ![App Screenshot](pcb4.111.png)
+   <br>
+   Analisis:
+   <br>Pertama, perintah `$ w -h | grep <user>` digunakan untuk menampilkan informasi tentang pengguna yang sedang masuk ke sistem tanpa header, dengan menggunakan grep untuk mencari baris yang mengandung kata <user>.
+Perintah berikutnya, `$ grep <user> /etc/passwd`, bertujuan untuk mencari entri pengguna dengan nama pengguna <user> dalam file /etc/passwd, yang berisi daftar pengguna yang terdaftar di sistem.
+Perintah `$ ls /etc | wc` digunakan untuk menghitung jumlah baris, kata, dan byte dari hasil perintah `ls /etc`, yaitu daftar isi direktori /etc.
+Perintah `$ ls /etc | wc -l` bertujuan untuk menghitung jumlah file dan direktori dalam direktori /etc, dengan menggunakan opsi -l untuk hanya menghitung jumlah baris (yaitu jumlah file dan direktori).
+Perintah berikutnya menciptakan dua file teks (kelas1.txt dan kelas2.txt) dengan menggunakan perintah `cat > namafile`. Setiap file berisi daftar nama siswa.
+Setelah itu, perintah `$ cat kelas1.txt kelas2.txt | sort` digunakan untuk menggabungkan isi dari kedua file dan mengurutkannya.
+Perintah `$ cat kelas1.txt kelas2.txt > kelas.txt` bertujuan untuk menggabungkan isi dari kedua file menjadi satu file bernama kelas.txt.
+Perintah `$ cat kelas.txt | sort | uniq` bertujuan untuk menggabungkan isi dari file kelas.txt, mengurutkannya, dan menghilangkan baris yang duplikat menggunakan perintah `uniq`.<br>
 
 ## LATIHAN:
 
@@ -339,22 +402,37 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
 
    ![App Screenshot](lat1.png)
    ![App Screenshot](lat11.png)
+   <br>
+   Analisis:
+   <br>Pada latihan ini, perintah pertama yang digunakan adalah ls untuk melihat daftar file, kemudian mengalihkan output dari ls untuk disimpan ke dalam file baru, dan kemudian mencetaknya.<br>
 
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
 
    ![App Screenshot](lat2.png)
+   <br>
+   Analisis:
+   <br>Menggunakan `ls` untuk melihat direktori /etc/passwd, dan mengalihkan outputnya ke dalam file baru tanpa menghapus isi dari file sebelumnya menggunakan operator >>.<br>
 
 3. Urutkan file baru dengan cara membelokkan standard input.
 
    ![App Screenshot](lat3.png)
+   <br>
+   Analisis:
+   <br>Membelokkan standard input dari file baru dengan perintah `sort` untuk mengurutkan isi dari file baru sesuai dengan huruf pertama. Di sini, file baru menjadi input dari perintah sort.<br>
 
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
 
    ![App Screenshot](lat4.png)
+   <br>
+   Analisis:
+   <br>Membelokkan standard input dari file baru dengan perintah `sort` untuk mengurutkan isi dari file baru sesuai dengan huruf pertama. Di sini, file baru menjadi input dari perintah sort. Kemudian, output dari perintah sort `< baru` dibelokkan ke dalam file `baru.urut`, dan dicetak menggunakan `cat`.<br>
 
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
 
    ![App Screenshot](lat5.png)
+   <br>
+   Analisis:
+   <br>Membuat direktori `latihan2` menggunakan perintah `mkdir` sebanyak 2 kali, lalu akan terjadi output error. Output error tersebut dibelokkan ke dalam file `rmdierror.txt` menggunakan operator pembelokan standard error yaitu `2>`. Kemudian mencetak file `rmdierror.txt` menggunakan perintah `cat`.<br>
 
 6. Urutkan kalimat berikut :
    ```
@@ -368,11 +446,17 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
 
    ![App Screenshot](lat6.png)
+   <br>
+   Analisis:
+   <br>Membuat list nama kota menggunakan notasi here document `<<@....@` dan menyimpannya ke dalam file `kota.txt`, lalu mengurutkan isi dari file tersebut menggunakan perintah `sort`.<br>
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 
    ![App Screenshot](lat7.png)
    ![App Screenshot](lat77.png)
+   <br>
+   Analisis:
+   <br>Membelokkan standard input dari `cat`, sehingga `baru.urut` menjadi input untuk perintah `cat`. Lalu dengan menggunakan pipeline dilanjutkan dengan perintah `wc` untuk menghitung jumlah baris, kata, dan karakter dari `baru.urut`. Output dari perintah yang tadi dibelokkan menuju file baru tanpa menghapus isi dari file baru sebelumnya menggunakan operator `>>`.<br>
 
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -389,6 +473,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    ![App Screenshot](lat8.png)
+   <br>
+   Analisis:
+   <br>Dengan menggunakan perintah `$ cat > hello.txt`, Anda membuat file baru bernama "hello.txt" yang berisi beberapa baris teks yang berisi kata-kata seperti "dog", "cat", "kuda", dan "ayam". Kemudian, dengan menggunakan perintah `$ cat hello.txt | sort | uniq`, Anda membaca isi file "hello.txt" secara alfabetis dan kemudian menggunakan `uniq` untuk menghilangkan kata-kata yang sama.<br>
 
 ## KESIMPULAN
 
