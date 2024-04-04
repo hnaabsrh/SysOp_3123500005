@@ -22,9 +22,10 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
 1. [Pokok Bahasan](#pokok-bahasan)
 2. [Tujuan Belajar](#tujuan-belajar)
 3. [Dasar Teori](#dasar-teori)
-4. [Laporan Hasil Percobaan 5](#percobaan-5--menghentikan-dan-memulai-kembali-job)
-5. [Laporan Hasil Percobaan 6](#percobaan-6--percobaan-dengan-penjadwalan-prioritas)
-6. [Laporan Hasil Latihan](#latihan)
+4. [Tugas Tambahan](#perbedaan-interrupt-dengan-system-call-dalam-diagram-state)
+5. [Laporan Hasil Percobaan 5](#percobaan-5--menghentikan-dan-memulai-kembali-job)
+6. [Laporan Hasil Percobaan 6](#percobaan-6--percobaan-dengan-penjadwalan-prioritas)
+7. [Laporan Hasil Latihan](#latihan)
 
 
 ## Proses dan Manajemen Proses
@@ -103,6 +104,17 @@ Beberapa versi UNIX mempunyai utilitas sistem yang disebut top yang menyediakan 
     q – quit
 
 Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX adalah perintah killall. Perintah ini akan menghentikan proses sesuai PID atau job number proses.
+
+
+### Perbedaan Interrupt dengan System Call dalam Diagram State
+
+Dalam diagram state, interrupt dan system call merupakan dua mekanisme yang berbeda namun sering berinteraksi dalam sistem komputer.
+
+1. *Interrupt (Gangguan):* Interrupt adalah sinyal yang dipancarkan oleh perangkat keras atau perangkat lunak untuk menginterupsi proses yang sedang berjalan dalam sistem. Ketika terjadi interrupt, CPU akan meninggalkan proses yang sedang berjalan dan beralih ke penanganan interrupt. Setelah interrupt ditangani, CPU kembali ke proses yang sebelumnya sedang berjalan.
+
+2. *System Call (Panggilan Sistem):* System call adalah mekanisme di mana program pengguna dapat berkomunikasi dengan kernel atau sistem operasi untuk melakukan tugas tertentu yang memerlukan hak akses khusus. Ketika program membutuhkan layanan sistem, ia melakukan system call, yang kemudian memicu perubahan mode dari mode pengguna ke mode kernel, dan sistem operasi menangani permintaan tersebut. Setelah tugas selesai, sistem kembali ke mode pengguna.
+
+Dalam diagram state, interrupt mungkin terjadi secara spontan atau karena kejadian luar biasa, sedangkan system call biasanya dipicu oleh instruksi yang dipanggil secara eksplisit oleh program. Keduanya mempengaruhi transisi antara mode pengguna dan mode kernel, tetapi tujuan dan cara kerjanya berbeda.
 
 ### Percobaan 5 : Menghentikan dan Memulai Kembali Job
 
