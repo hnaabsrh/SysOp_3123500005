@@ -243,7 +243,7 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
 1. Masuk ke tty2 dengan Ctrl+Alt+F2. Ketik ps –au dan tekan Enter. Kemudian perhatikan keluaran sebagai berikut :
 
-   ![App Screenshot](han1.png)
+   ![App Screenshot](han0.png)
 
    - Sebutkan nama-nama proses yang bukan root
 
@@ -264,14 +264,14 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
    - Pada prompt login lakukan hal- hal sebagai berikut : `$ csh` `$ who` `$ bash` `$ ls` `$ sh` `$ ps`
 
-     ![App Screenshot](han2.png)
+     ![App Screenshot](han1.png)
 
      Analisa :
      Perintah `$ bash` digunakan untuk mengkonversi instruksi yang dimasukkan ke dalam bahasa biner yang dapat di mengerti oleh kernel Linux, perintah `$ ls` digunakan untuk menunjukkan semua file yang ada dalam direktori aktif, dan perintah `$ csh` adalah sebuah shell interaktif yang memiliki lebih banyak sintaks dibandingkan dengan Bourne Shell. PID, TTY, TIME, dan CMD membentuk empat kolom utama tampilan perintah ps, yang menampilkan daftar proses yang sedang berlangsung dalam sistem. Perintah `$ who` menampilkan daftar pengguna yang saat ini masuk ke sistem. Ini menunjukkan nama pengguna, terminal yang mereka gunakan, waktu login, dan informasi lainnya. Perintah ini digunakan dengan sering untuk mengetahui siapa yang sedang menggunakan sistem atau
 
    - Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1.
 
-     ![App Screenshot](han3.png)
+     ![App Screenshot](han2.png)
 
      - PID = 5204 (ps)
      - PID = 5203 (sh)
@@ -283,43 +283,43 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
    - `-f` daftar penuh
 
-   ![App Screenshot](han4.png)
+   ![App Screenshot](han3.png)
 
    Analisa : Output dapat ditampilkan dalam format yang lengkap atau penuh dengan menggunakan opsi `-f`. Ini biasanya mengandung data seperti pengguna yang menjalankan proses, PID (identifikasi proses), PID induk (identifikasi proses parental), waktu mulai proses, dan perintah yang dijalankan.
 
    - `-j` format job
 
-   ![App Screenshot](han5.png)
+   ![App Screenshot](han4.png)
 
    Analisa : Informasi job control untuk setiap proses ditampilkan dengan opsi -j. Dalam sistem Unix/Linux, ada mekanisme yang dikenal sebagai job control, yang memungkinkan pengguna mengawasi dan mengontrol proses yang berjalan di terminal.
 
    - `j` format job control
 
-   ![App Screenshot](han6.png)
+   ![App Screenshot](han5.png)
 
    Analisa :
 
    - `l` daftar memanjang
 
-   ![App Screenshot](han7.png)
+   ![App Screenshot](han6.png)
 
    Analisa : Untuk menampilkan output yang lebih luas, opsi -l biasanya menyertakan informasi tambahan seperti nama lengkap pengguna yang menjalankan proses, perintah yang dijalankan, dan waktu mulai proses.
 
    - `s` format sinyal
 
-   ![App Screenshot](han8.png)
+   ![App Screenshot](han7.png)
 
    Analisa : Opsi `s` dapat menampilkan informasi tentang sinyal yang dikirimkan kepada proses. Misalnya, jika Anda menggunakan `ps s`, Anda dapat melihat daftar sinyal yang telah dikirimkan kepada proses dengan ID proses (PID) tertentu.
 
    - `v` format virtual memory
 
-   ![App Screenshot](han9.png)
+   ![App Screenshot](han8.png)
 
    Analisa :Opsi `v` menampilkan informasi tentang penggunaan memori virtual oleh setiap proses. Ini mencakup ukuran memori virtual total yang dialokasikan, ukuran memori virtual yang saat ini digunakan, dan ukuran memori yang terlibat, yang merupakan memori yang diambil dari memori fisik.
 
    - `X` format register i386
 
-   ![App Screenshot](han10.png)
+   ![App Screenshot](han9.png)
 
    Analisa : Semua proses, bahkan yang tidak terkait dengan terminal pengguna (tidak terkendali), dapat ditampilkan dengan opsi `X`.
 
@@ -327,81 +327,81 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
 - Gunakan perintah `find` ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
 
+  ![App Screenshot](han10.png)
   ![App Screenshot](han11.png)
-  ![App Screenshot](han12.png)
 
   Analisa : Perintah `find` dapat mencari ke seluruh direktori sistem, dimulai dari root directory (/). Untuk menyimpan daftar lengkap dari semua direktori dalam sistem ke dalam sebuah file, kita dapat mengalihkan output perintah `find` ke file `directories.txt`. Dengan menggunakan `2>` errors untuk memisahkan pesan error, Anda dapat menangkap dan menyimpan pesan error, jika ada, ke dalam file yang disebut `errors`.
 
 - Gunakan perintah sleep 5. Apa yang terjadi dengan perintah ini ?
 
-  ![App Screenshot](han13.png)
+  ![App Screenshot](han12.png)
 
   Analisa : Perintah `sleep` digunakan dalam sistem operasi Unix/Linux untuk membuat proses tertunda, atau tidur, untuk jangka waktu tertentu (waktu yang telah dideklarasikan, semisal pada contoh diatas 5 => 5 second) sebelum melanjutkan eksekusi perintah berikutnya.
 
 - Jalankan perintah pada background menggunakan &
 
-  ![App Screenshot](han14.png)
+  ![App Screenshot](han13.png)
 
   Analisa : Proses akan berjalan di background dengan nomor PID yang telah ditampilkan.
 
 - Jalankan sleep 15 pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan bg. Ketikkan jobs. Ketikkan ps. Kembalikan job ke foreground dengan perintah fg.
 
-  ![App Screenshot](han15.png)
+  ![App Screenshot](han14.png)
 
   Analisa : Proses untuk memunda proses berikutnya selama 15 second setelah dihentikan sementara di cek pada background menggunakan perintah `bg` dan diperiksa apakah ada jobs saat ini menggunakan perintah `jobs` disini akan muncull PID beserta nama dari proses tersebut. terakhir ketik perintah `fg` untuk melanjutkan proses `sleep 15`.
 
 - Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah kill untuk menghentikan proses diikuti job number.
 
-  ![App Screenshot](han16.png)
+  ![App Screenshot](han15.png)
 
   Analisa : Menjalankan proses delay selama 15 dan ditempatkan pada background menjadi `sleep 15 &`, setelah itu di cek menggunakan perintah `ps` dan `jobs` agar dapat melihat proses tersebut berjalan pada background. kill %1 untuk menghentikan proses sesuai PID yang tertera pada perintah `jobs` maka setelah di cek menggunakan perintah `ps` akan tampil bahwa proses `sleep 15` akan berhenti atau berganti status dari `Running` menjadi `Terminated`
 
 - Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses.
 
-  ![App Screenshot](han17.png)
+  ![App Screenshot](han16.png)
 
   Analisa : Menjalankan proses delay lagi selama 15 second pada background dengan perintah `sleep 15 &` lalu cek menggunakan perintah `ps` atau `jobs`, jalankan perintah `kill -STOP %1` untuk menghentikan proses sementara.
 
 - Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.
 
-  ![App Screenshot](han18.png)
+  ![App Screenshot](han17.png)
 
   Analisa : Menjalankan proses delay selama 60 second sebanyak 5 kali dan ditempatkan pada background perintahnya `sleep 60 &` lalu setiap proses tersebut akan diberi PID untuk masing - masing proses. cek menggunakan perintah `ps` untuk menampilkan proses yang berlajan saat ini. ketikan perintah `killall sleep` maka akan menghentikan setiap program atau proses yang bernama sleep cek kembali menggunakan perintah `ps` maka proses sleep tidak akan ada karena telah dihentikan dan statusnya telah terminated.
 
 - Gunakan perintah ps, w dan top untuk menunjukkan semua proses yang sedang dieksekusi.
 
-  ![App Screenshot](han20.png)
+  ![App Screenshot](han18.png)
 
-  ![App Screenshot](han21.png)
+  ![App Screenshot](han20.png)
 
   Analisa : Kombinasi perintah ps aux, w, dan top memberikan tampilan menyeluruh dari semua proses yang sedang dieksekusi di sistem Linux. Perintah ps aux memberikan detail tentang setiap proses, termasuk PID, pengguna yang menjalankannya, dan penggunaan CPU, sementara w memberikan tampilan aktivitas login pengguna. Top memberikan tampilan waktu nyata yang memungkinkan pemantauan langsung terhadap penggunaan CPU, memori, dan proses-proses.
 
 - Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subproses ?
 
-  ![App Screenshot](han22.png)
+  ![App Screenshot](han21.png)
 
   - Init process adalah induk dari semua proses pada linux, ditandai dengan PID = 1 yaitu systemd.
 
-  ![App Screenshot](han23.png)
+  ![App Screenshot](han22.png)
 
   - Sistem daemon yang penting disebut juga dengan init process dengan PID = 1. Selain itu, service deamon ditandai dengan huruf belakangnya d.
 
-  ![App Screenshot](han24.png)
+  ![App Screenshot](han23.png)
 
   - Untuk shell, terdapat di terminal yang sedang aktif (pts/1) yaitu proses seperti bash dan ps
 
-  ![App Screenshot](han25.png)
+  ![App Screenshot](han24.png)
 
 - Kombinasikan ps –fae dan grep, apa yang Anda lihat ?
 
-  ![App Screenshot](han26.png)
+  ![App Screenshot](han25.png)
 
   Analisa : Perintah ps -fae digunakan untuk menampilkan semua proses yang sedang berjalan pada mesin. Saat digabungkan dengangan grep menggunakan pipelining, maka hanya akan ditampilkan proses yang dicari menggunakan grep tersebut. Pada contoh ini, saya mencari proses yang ada pada tty2, yaitu terminal yang sedang saya gunakan. Dapat dilihat bahwa ada 2 proses pada tty2.
 
 - Jalankan proses sleep 300 pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
 
-  ![App Screenshot](han27.png)
+  ![App Screenshot](han26.png)
 
-  ![App Screenshot](assets/img/l3_18.png)
+  ![App Screenshot](han27.png)
 
   Analisa : Yang terjadi ialah proses sleep tidak lagi dalam keadaan Running. Hal ini bisa terjadi karena kita keluar dari terminal dan itu otomatis membuat semua proses yang dijalankan oleh user yang log off ikut berhenti.
