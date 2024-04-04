@@ -327,7 +327,7 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
 - Gunakan perintah `find` ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
 
-  ![App Screenshot](han10.png)
+  ![App Screenshot](han10.png)<br>
   ![App Screenshot](han11.png)
 
   Analisa : Perintah `find` dapat mencari ke seluruh direktori sistem, dimulai dari root directory (/). Untuk menyimpan daftar lengkap dari semua direktori dalam sistem ke dalam sebuah file, kita dapat mengalihkan output perintah `find` ke file `directories.txt`. Dengan menggunakan `2>` errors untuk memisahkan pesan error, Anda dapat menangkap dan menyimpan pesan error, jika ada, ke dalam file yang disebut `errors`.
