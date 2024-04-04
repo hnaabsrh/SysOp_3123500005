@@ -384,7 +384,7 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
   - Init process adalah induk dari semua proses pada linux, ditandai dengan PID = 1 yaitu systemd.
 
-  ![App Screenshot](han23.png)
+  ![App Screenshot](han24.png)
 
   - Sistem daemon yang penting disebut juga dengan init process dengan PID = 1. Selain itu, service deamon ditandai dengan huruf belakangnya d.
 
