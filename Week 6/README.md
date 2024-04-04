@@ -374,27 +374,29 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
   ![App Screenshot](han20.png)
 
+  ![App Screenshot](han21.png)
+
   Analisa : Kombinasi perintah ps aux, w, dan top memberikan tampilan menyeluruh dari semua proses yang sedang dieksekusi di sistem Linux. Perintah ps aux memberikan detail tentang setiap proses, termasuk PID, pengguna yang menjalankannya, dan penggunaan CPU, sementara w memberikan tampilan aktivitas login pengguna. Top memberikan tampilan waktu nyata yang memungkinkan pemantauan langsung terhadap penggunaan CPU, memori, dan proses-proses.
 
 - Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subproses ?
 
-  ![App Screenshot](han21.png)
+  ![App Screenshot](han22.png)
 
   - Init process adalah induk dari semua proses pada linux, ditandai dengan PID = 1 yaitu systemd.
 
-  ![App Screenshot](han22.png)
+  ![App Screenshot](han23.png)
 
   - Sistem daemon yang penting disebut juga dengan init process dengan PID = 1. Selain itu, service deamon ditandai dengan huruf belakangnya d.
 
-  ![App Screenshot](han23.png)
+  ![App Screenshot](han24.png)
 
   - Untuk shell, terdapat di terminal yang sedang aktif (pts/1) yaitu proses seperti bash dan ps
 
-  ![App Screenshot](han24.png)
+  ![App Screenshot](han25.png)
 
 - Kombinasikan ps –fae dan grep, apa yang Anda lihat ?
 
-  ![App Screenshot](han25.png)
+  ![App Screenshot](han26.png)
 
   Analisa : Perintah ps -fae digunakan untuk menampilkan semua proses yang sedang berjalan pada mesin. Saat digabungkan dengangan grep menggunakan pipelining, maka hanya akan ditampilkan proses yang dicari menggunakan grep tersebut. Pada contoh ini, saya mencari proses yang ada pada tty2, yaitu terminal yang sedang saya gunakan. Dapat dilihat bahwa ada 2 proses pada tty2.
 
