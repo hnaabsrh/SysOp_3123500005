@@ -169,70 +169,73 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 1. Login sebagai root.
 2. Buka 3 terminal, tampilkan pada screen yang sama.
 
-   ![App Screenshot](assets/img/p6_1.png)
+   ![App Screenshot](coba8.png)
 
 3. Pada setiap terminal, ketik `PS1="\w;"` diikuti Enter. `\w` menampilkan path pada direktori home.
 
-   ![App Screenshot](assets/img/p6_2.png)
+   ![App Screenshot](coba9.png)
 
 4. Karena login sebagai root, maka akan ditampilkan `~;` pada setiap terminal. Untuk setiap terminal ketik `pwd` dan tekan Enter untuk melihat bahwa Anda sedang berada pada direktori /root.
 
-   ![App Screenshot](assets/img/p6_3.png)
+   ![App Screenshot](coba10.png)
 
 5. Buka terminal lagi (keempat), atur posisi sehingga keempat terminal terlihat pada screen.
 
-   ![App Screenshot](assets/img/p6_4.png)
+   ![App Screenshot](coba11.png)
 
 6. Pada terminal keempat, ketik `top` dan tekan Enter. Maka program `top` akan muncul. Ketik i. `Top` akan menampilkan proses yang aktif. Ketik `lmt`. `Top` tidak lagi menampilkan informasi pada bagian atas dari screen. Pada percobaan ini, terminal ke empat sebagai jendela `Top`.
 
-   ![App Screenshot](assets/img/p6_5.png)
+   ![App Screenshot](coba12.png)
 
    Ketik `lmt`
 
-   ![App Screenshot](assets/img/p6_7.png)
+   ![App Screenshot](coba1212.png)
 
 7. Pada terminal 1, bukalah program executable C++ dengan mengeti program `yes` dan tekan Enter.
+
+   ![App Screenshot](coba13.png)
+
 8. Ulangi langkah 7 untuk terminal 2.
 
-   ![App Screenshot](assets/img/p6_8.png)
+   ![App Screenshot](coba14.png)
 
 9. Jendela Top akan menampilkan dua program `yes` sebagai proses yang berjalan. Nilai %CPU sama pada keduanya. Hal ini berarti kedua proses mengkonsumsi waktu proses yang sama dan berjalan sama cepat. PID dari kedua proses akan berbeda, misalnya 2713 dan 2715. Kemudiani gunakan terminal 3 (yang tidak menjalankan primes maupun Jendela Top) dan ketik `renice 19 <PID terminal 1>` (contoh: `renice 19 2713`) dan diikuti Enter. Hal ini berarti mengganti penjadwalan prioritas dari proses ke 19.
 
-   ![App Screenshot](assets/img/p6_9.png)
+   ![App Screenshot](coba15.png)
 
 10. Tunggu beberapa saat sampai program top berubah dan terlihat pada jendela Top. Pada kolom STAT memperlihatkan N untuk proses 2713. Hal ini berarti bahwa penjadwalan prioritas untuk proses 2713 lebih besar (lebih lambat) dari 0. Proses 2715 berjalan lebih cepat.
 
-    ![App Screenshot](assets/img/p6_9.png)
+    ![App Screenshot](coba16.png)
 
 11. Program top juga mempunyai fungsi yang sama dengan program `renice`. Pilih jendela Top dan tekan `r`. Program top terdapat prompt PID to renice: tekan 2713 (ingat bahwa Anda harus mengganti 2713 dengan PID Anda sendiri) dan tekan Enter. Program top memberikan prompt `Renice` PID 2713 to value: tekan -19 dan tekan Enter.
 
-    ![App Screenshot](assets/img/p6_10.png)
+    ![App Screenshot](coba17.png)
 
-    ![App Screenshot](assets/img/p6_11.png)
+    ![App Screenshot](coba18.png)
 
 12. Tunggu beberapa saat sampai top berubah dan lihat nilai %CPU pada kedua proses. Sekarang proses 2713 lebih cepat dari proses 2715. Kolom status menunjukkan penjadwalan prioritas lebih rendah (lebih cepat) dari nilai 0.
 
-    ![App Screenshot](assets/img/p6_12.png)
+    ![App Screenshot](coba19.png)
 
 13. Pilih terminal 3 (yang sedang tidak menjalankan `yes` atau program top) dan ketik `nice -n -10 yes` dan Tekan Enter. Tunggu beberapa saat agar program top berubah dan akan terlihat proses primes ketiga. Misalnya PID nya 2714. Opsi -10 berada pada kolom NI (penjadwalan prioritas).
 
-    ![App Screenshot](assets/img/p6_13.png)
+    ![App Screenshot](coba20.png)
 
-    ![App Screenshot](assets/img/p6_14.png)
+    ![App Screenshot](coba21.png)
 
 14. Jangan menggunakan mouse dan keyboard selama 10 detik. Program top menampilkan proses yang aktif selain program yes. Maka akan terlihat proses top terdaftar tetapi %CPU kecil (dibawah 1.0) dan konsisten. Juga terlihat proses berhubungan dengan dekstop grafis seperti X, panel dll.
 
-    ![App Screenshot](assets/img/p6_15.png)
+    ![App Screenshot](coba22.png)
 
 15. Pindahkan mouse sehingga kursor berubah pada screen dan lihat apa yang terjadi dengan tampilan top. Proses tambahan akan muncul dan nilai %CPU berubah sebagai bagian grafis yang bekerja. Satu alasan adalah bahwa proses 2714 berjalan pada penjadwalan prioritas tinggi. Pilih jendela Top ketik `r`. PID to reniceL muncul prompt. Ketik 2714 (ubahlah 2714 dengan PID Anda) dan tekan Enter. Renice PID 2714 to value: muncul prompt. Ketik 0 dan tekan Enter. Sekarang pindahkan mouse ke sekeliling screen. Lihat perubahannya.
 
-    ![App Screenshot](assets/img/p6_16.png)
+    ![App Screenshot](coba22.png)
 
-    ![App Screenshot](assets/img/p6_17.png)
+    ![App Screenshot](coba23.png)
 
-    ![App Screenshot](assets/img/p6_18.png)
+    ![App Screenshot](coba24.png)
 
-    ![App Screenshot](assets/img/p6_19.png)
+    ![App Screenshot](coba25.png)
 
 16. Tutup semua terminal window.
 17. Logout dan login kembali sebagai user.
