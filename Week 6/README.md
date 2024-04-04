@@ -26,7 +26,6 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
 5. [Laporan Hasil Percobaan 6](#percobaan-6--percobaan-dengan-penjadwalan-prioritas)
 6. [Laporan Hasil Latihan](#latihan)
 
-# Praktikum 4B | Week - 6
 
 ## Proses dan Manajemen Proses
 
@@ -139,18 +138,19 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
 5. Perintah `fg %2`, `bg %2`, atau `%2`
 
-   ![App screenshot](coba5.png)
+   ![App screenshot](coba5.png)<br>
+
    ![App Screenshot](coba55.png)
 
    Analisa : Perintah di atas digumakan apabila ingin menjalankan banyak job dalam satu waktu, letakkan job pada foreground atau background dengan memberikan job ID.
 
-6. Perintah `fg`
+7. Perintah `fg`
 
    ![App Screenshot](coba6.png)
 
    Analisa : tekan fg dan tekan Enter, kemudian dilanjutkan dengan Ctrl-Z untuk menghentikan sementara
 
-7. Perintah `ps -fae`
+8. Perintah `ps -fae`
 
    ![App Screenshot](coba7.png)
 
@@ -162,7 +162,7 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
    Analisa : Lihat job dengan perintah ps -fae dan tekan Enter. Kemudian hentikan proses dengan perintah kill. Pada proses di atas proses yang dihentikan adalah proses dengan PID 6142, yaitu proses yes > /dev/null
 
-8. Logout dan tekan Alt+F7 untuk kembali ke mode grafis
+9. Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
 ### Percobaan 6 : Percobaan dengan Penjadwalan Prioritas
 
