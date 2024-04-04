@@ -392,11 +392,11 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
   - Untuk shell, terdapat di terminal yang sedang aktif (pts/1) yaitu proses seperti bash dan ps
 
-  ![App Screenshot](han25.png)
+  ![App Screenshot](han23.png)
 
 - Kombinasikan ps –fae dan grep, apa yang Anda lihat ?
 
-  ![App Screenshot](han26.png)
+  ![App Screenshot](han25.png)
 
   Analisa : Perintah ps -fae digunakan untuk menampilkan semua proses yang sedang berjalan pada mesin. Saat digabungkan dengangan grep menggunakan pipelining, maka hanya akan ditampilkan proses yang dicari menggunakan grep tersebut. Pada contoh ini, saya mencari proses yang ada pada tty2, yaitu terminal yang sedang saya gunakan. Dapat dilihat bahwa ada 2 proses pada tty2.
 
