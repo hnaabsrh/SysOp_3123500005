@@ -357,24 +357,24 @@ Analisa: Proses induk mencetak pesan yang menyatakan identitasnya sebagai "I am 
 
 Source Code
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/wait.h> // untuk wait()
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <unistd.h>
+    #include <sys/wait.h> // untuk wait()
 
-#define ROWS 4
-#define COLS 4
+    #define ROWS 4
+    #define COLS 4
 
-void printMatrix(int matrix[ROWS][COLS]) {
-    for (int i = 0; i < ROWS; i++) {
-        for (int j = 0; j < COLS; j++) {
-            printf("%d ", matrix[i][j]);
+    void printMatrix(int matrix[ROWS][COLS]) {
+        for (int i = 0; i < ROWS; i++) {
+            for (int j = 0; j < COLS; j++) {
+                printf("%d ", matrix[i][j]);
+            }
+            printf("\n");
         }
-        printf("\n");
     }
-}
 
-int main() {
+    int main() {
     int matrix[ROWS][COLS];
     int scalar = 2; // Skalar yang akan digunakan untuk perkalian
 
