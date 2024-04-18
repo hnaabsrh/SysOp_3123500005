@@ -91,9 +91,9 @@ Manual: `$ man 3 exec`
 
 ### 1. Buat tulisan tentang konsep **fork** dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)
 
-Fork merupakan salah satu konsep fundamental dalam sistem operasi Unix yang memungkinkan proses untuk membuat salinan dirinya sendiri. Dalam konteks bahasa pemrograman C, fungsi fork() digunakan untuk menciptakan proses baru yang disebut sebagai child process. Child process ini merupakan salinan identik dari proses parent yang memanggilnya, termasuk kode program dan lingkungan eksekusinya. Setelah proses child terbentuk, kedua proses (parent dan child) akan berjalan secara independen satu sama lain, memiliki ruang alamat memori yang terpisah, namun saling berbagi sumber daya sistem yang sama. Fork sangat berguna dalam paradigma pemrograman multiproses, memungkinkan aplikasi untuk melakukan tugas-tugas secara bersamaan atau paralel.
+Fork merupakan salah satu konsep fundamental dalam sistem operasi Unix yang memungkinkan proses untuk membuat salinan dirinya sendiri. Dalam konteks bahasa pemrograman C, fungsi fork() digunakan untuk menciptakan proses baru yang disebut sebagai child process. Child process ini merupakan salinan identik dari proses parent yang memanggilnya, termasuk kode program dan lingkungan eksekusinya. Setelah proses child terbentuk, kedua proses (parent dan child) akan berjalan secara independen satu sama lain, memiliki ruang alamat memori yang terpisah, namun saling berbagi sumber daya sistem yang sama. 
 
-Implementasi fork dalam bahasa pemrograman C cukup sederhana. Berikut adalah contoh kode sederhana yang menggunakan fork untuk membuat proses child:
+Fork sangat berguna dalam paradigma pemrograman multiproses, memungkinkan aplikasi untuk melakukan tugas-tugas secara bersamaan atau paralel. Implementasi fork dalam bahasa pemrograman C cukup sederhana. Berikut adalah contoh kode sederhana yang menggunakan fork untuk membuat proses child:
 Source Code
 
     #include <sys/types.h>
