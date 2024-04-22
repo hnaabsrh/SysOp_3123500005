@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="Logo_PENS.png" alt="Logo PENS">
+    <img src="Assets/Logo_PENS.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
@@ -35,39 +35,39 @@ Motherboard adalah wadah dari berbagai komponen elektronik yang saling terjalin 
 
 Motherboard memiliki beberapa bagian sebagai berikut:
 1. *Socket CPU*: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
-<img src="socket CPU.jpeg">
+<img src="Assets/socket CPU.jpeg">
 
 2. *BIOS (Basic Input-Output System)*: Program dasar yang menghubungkan motherboard dengan sistem operasi.
-<img src="BIOS.jpg">
+<img src="Assets/BIOS.jpg">
 
 3. *North Bridge Controller*: Menghubungkan slot RAM, AGP, dan socket CPU.
-<img src="nourth south.PNG">
+<img src="Assets/nourth south.PNG">
 
 4. *South Bridge Controller*: Mengatur peripheral seperti USB, keyboard, IDE controller, dll.
-<img src="nourth south.PNG">
+<img src="Assets/nourth south.PNG">
 
 5. *Konektor Power Supply Unit*: Menyambungkan motherboard dengan power supply, AT atau ATX.
-<img src="konektor powersupply.jpeg">
+<img src="Assets/konektor powersupply.jpeg">
 
 6. *Slot RAM*: Tempat meletakkan RAM, saat ini menggunakan tipe DDR3.
-<img src="slot RAM.jpeg">
+<img src="Assets/slot RAM.jpeg">
 
 7. *Slot PCI*: Tempat untuk Add-on Card seperti LAN, sound, dan TV Tuner.
-<img src="slot PCI.jpeg">
+<img src="Assets/slot PCI.jpeg">
 
 8. *Slot AGP (Accelerated Graphics Port)*: Untuk AGP Card yang menampilkan grafis.
-<img src="slot AGP.jpeg">
+<img src="Assets/slot AGP.jpeg">
 
 9. *Slot IDE dan SATA*: IDE untuk harddisk atau floppy disk, SATA untuk serial ATA.
-<img src="IDE SATA.jpeg">
+<img src="Assets/IDE SATA.jpeg">
 
 10. *CMOS (Complementary Metal Oxide Semiconductor)*: Baterai yang memberi daya pada memori untuk pengaturan
 konfigurasi.
-<img src="CMOS.jpeg">
+<img src="Assets/CMOS.jpeg">
 
 # Perbedaan Legacy UEFI
 
-<img src="UEFI-vs-Legacy.png">
+<img src="Assets/UEFI-vs-Legacy.png">
 
 1. Definisi
 Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih
