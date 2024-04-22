@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="Logo_PENS.png" alt="Logo PENS">
+    <img src="Assets/Logo_PENS.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
@@ -120,12 +120,12 @@ Source Code
 
 Output
 
-![App Screenshot](outputparentchild.png)
+![App Screenshot](Assets/outputparentchild.png)
 
 
 Gambar
 
-![App Screenshot](konsepfork.png)
+![App Screenshot](Assets/konsepfork.png)
 
 Analisa : Program ini mencetak informasi tentang PID (Process ID), Child ID, dan PPID (Parent Process ID) saat proses utama dipanggil dengan PID 2488 dan parent ID 2246. Saat proses utama menggunakan fungsi fork(), informasi tersebut dicetak dengan penjelasan yang menunjukkan proses induk dan anak, masing-masing memiliki PID dan PPID. Proses induk memiliki PID 2488 dan PPID 2246, sama dengan proses utama. Proses anak memiliki PID 2489 dan PPID 1130, dengan PID yang jelas lebih besar daripada proses induk.
 ### 2. Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program `fork01.c`, `fork02.c`, `fork03.c`, `fork04.c`, `fork05.c`dan `fork06.c`.
@@ -134,11 +134,11 @@ Analisa : Program ini mencetak informasi tentang PID (Process ID), Child ID, dan
 
 Source Code:
 
-![App Screenshot](inputfork01.png)
+![App Screenshot](Assets/inputfork01.png)
 
 Output:
 
-![App Screenshot](outputfork01.png)
+![App Screenshot](Assets/outputfork01.png)
 
 Visualisasi:
 
@@ -168,11 +168,11 @@ Analisa: Tampilan di atas menunjukkan bahwa program sedang melakukan proses fork
 
 Source Code:
 
-![App Screenshot](inputfork02.png)
+![App Screenshot](Assets/inputfork02.png)
 
 Output:
 
-![App Screenshot](outputfork02.png)
+![App Screenshot](Assets/outputfork02.png)
 
 Visualisasi:
 
@@ -204,11 +204,11 @@ Analisa: Output di atas menunjukkan bahwa aplikasi ini memanfaatkan sistem peman
 
 Source Code:
 
-![App Screenshot](inputfork03.png)
+![App Screenshot](Assets/inputfork03.png)
 
 Output:
 
-![App Screenshot](outputfork03.png)
+![App Screenshot](Assets/outputfork03.png)
 
 Visualisasi:
 
@@ -240,13 +240,13 @@ Analisa: Program di atas melakukan pengulangan proses forking, menghasilkan pros
 
 Source Code:
 
-![App Screenshot](inputfork04a.png)
+![App Screenshot](Assets/inputfork04a.png)
 
-![App Screenshot](inputfork04b.png)
+![App Screenshot](Assets/inputfork04b.png)
 
 Output:
 
-![App Screenshot](outputfork04.png)
+![App Screenshot](Assets/outputfork04.png)
 
 Visualisasi:
 
@@ -279,13 +279,13 @@ Analisa: Program tersebut melakukan proses fork untuk menciptakan proses anak. P
 
 Source Code:
 
-![App Screenshot](inputfork05a.png)
+![App Screenshot](Assets/inputfork05a.png)
 
-![App Screenshot](inputfork05b.png)
+![App Screenshot](Assets/inputfork05b.png)
 
 Output:
 
-![App Screenshot](outputfork05.png)
+![App Screenshot](Assets/outputfork05.png)
 
 Visualisasi:
 
@@ -319,15 +319,15 @@ Analisa: Program di bawah ini adalah sebuah contoh implementasi `fork()` dengan 
 
 Source Code:
 
-![App Screenshot](inputfork06a.png)
+![App Screenshot](Assets/inputfork06a.png)
 
-![App Screenshot](inputfork06b.png)
+![App Screenshot](Assets/inputfork06b.png)
 
-![App Screenshot](inputfork06c.png)
+![App Screenshot](Assets/inputfork06c.png)
 
 Output:
 
-![App Screenshot](outputfork06.png)
+![App Screenshot](Assets/outputfork06.png)
 
 Visualisasi:
 
@@ -419,7 +419,7 @@ Source Code
 
 Output
 
-![App Screenshot](outputmatriks.png)
+![App Screenshot](Assets/outputmatriks.png)
 
 Analisa: Kode di atas merupakan sebuah program perkalian 2 matriks [4 x 4] dalam bahasa C yang menggunakan fork() untuk melakukan proses multiproses.
 
