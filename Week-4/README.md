@@ -11,7 +11,7 @@
         <strong>Dio Ramadhan Widya Pamungkas (3123500011)</strong><br>
         <strong>Ragil Ridho Saputra (3122500016)</strong>
     </p>
-
+    
 <h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
 Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
     <hr>
