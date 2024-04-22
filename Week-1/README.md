@@ -103,6 +103,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
   
   11.Tunggu instalasi sampai selesai,bila sudah selesai masukkan konfigurasi network untuk hostname dan untuk domain kita
   kosongkan
+  
   <img src="Assets/picture 12.png">
   <img src="Assets/picture 13.png">
   <img src="Assets/picture 14.png">
@@ -125,6 +126,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
   
   16.Pilih pri/log,kemudian create new partition,atur ke 20GB,pilih primary,kemudian pilih beginning dan bootable flag
   ubah ke on dan pilih done
+  
   <img src="Assets/picture 23.png">
   <img src="Assets/picture 24.png">
   <img src="Assets/picture 25.png">
