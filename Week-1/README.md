@@ -85,6 +85,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
   
   6.Klik 2 kali dan akan memasuki proses penginstalan debian dan pilih graphic install dan akan memunculkan halaman
   tersebut dan pilih english
+  
   <img src="Assets/picture 6.png">
   
   7.Pilih yes pada bagian install the GRUB boot loader dan pilih continue
