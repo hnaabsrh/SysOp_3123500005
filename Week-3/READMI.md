@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="Logo_PENS.png" alt="Logo PENS">
+    <img src="Assets/Logo_PENS.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
@@ -36,7 +36,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 ### Install GCC, make, dan GIT
 
-![App Screenshot](installmakegit.jpg)
+![App Screenshot](Assets/installmakegit.jpg)
 Deskripsi:
 <br>Gambar diatas merupakan penginstalan gcc,make dan git pada linux
 <br>-GCC berguna sebagai compiler untuk menjalankan program flops iops yang menggunakan bahasa C
@@ -49,7 +49,7 @@ Deskripsi:
 
 ### How to run FLOPS dan IOPS
 
-![App Screenshot](runflopsiops.jpg)
+![App Screenshot](Assets/runflopsiops.jpg)
 <br>Deskripsi:
 <br>Gambar diatas merupakan bagaimana cara untuk menjalan kan program flops dan iops
 <br>Berikut adalah langkah-langkah nya:
@@ -67,23 +67,23 @@ Deskripsi:
    <br>
    AMD Ryzen 5 6600H with Radeon Graphics dan jumlah core 4<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](flopsragil.jpg)<br>
+   ![App Screenshot](Assets/flopsragil.jpg)<br>
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](iopsragil.jpg)<br>
+   ![App Screenshot](Assets/iopsragil.jpg)<br>
 2. Hana<br>
    Spesifikasi:<br>
    Intel Core i7-8650U dan jumlah core 4<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](flopshana.jpg)<br>
+   ![App Screenshot](Assets/flopshana.jpg)<br>
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](iopshana.jpg)<br>
+   ![App Screenshot](Assets/iopshana.jpg)<br>
 3. Dio<br>
    Spesifikasi:<br>
    AMD Ryzen 7 4800H with Radeon Graphics dan jumlah core 2
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](flopsdio.jpg)<br>
+   ![App Screenshot](Assets/flopsdio.jpg)<br>
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](iopsdio.jpg)<br>
+   ![App Screenshot](Assets/iopsdio.jpg)<br>
 
 ### Tabel Pengujian
 
