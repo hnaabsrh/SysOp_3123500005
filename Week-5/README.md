@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="Logo_PENS.png" alt="Logo PENS">
+    <img src="Assets/Logo_PENS.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
@@ -189,12 +189,12 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
 1.  Login sebagai user.
 
-    ![App Screenshot](1.png)
+    ![App Screenshot](Assets/1.png)
 
 2.  Download program C++ untuk menampilkan bilangan prima yang bernama
     primes.
 
-    ![App Screenshot](2.png)
+    ![App Screenshot](Assets/2.png)
 
         Analisa:
 
@@ -208,7 +208,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 6.  Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2
     dan login ke terminal sebagai user.
 
-    ![App Screenshot](3.png)
+    ![App Screenshot](Assets/3.png)
 
         Analisa:
 
@@ -218,7 +218,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps`
 
-    ![App Screenshot](4.png)
+    ![App Screenshot](Assets/4.png)
 
         Analisa:
 
@@ -228,7 +228,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps -u`
 
-    ![App Screenshot](5.png)
+    ![App Screenshot](Assets/5.png)
 
         Analisa :
 
@@ -238,28 +238,28 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps –u < user >`
 
-    ![App Screenshot](6.png)
+    ![App Screenshot](Assets/6.png)
 
 
 10. Mencari proses lainnya gunakan opsi a (all) dan au (all user)
 
     `$ ps –a`
 
-    ![App Screenshot](7.png)
+    ![App Screenshot](Assets/7.png)
 
     `$ ps –au`
 
-    ![App Screenshot](8.png)
+    ![App Screenshot](Assets/8.png)
 
 11. Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
-    ![App Screenshot](9.png)
+    ![App Screenshot](Assets/9.png)
 
 #### Percobaan 2 : Menampilkan Hubungan Proses Parent dan Child
 
 1.  Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
-    ![App Screenshot](10.png)
+    ![App Screenshot](Assets/10.png)
 
         Analisa:
 
@@ -268,7 +268,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps -eH`
 
-    ![App Screenshot](11.png)
+    ![App Screenshot](Assets/11.png)
     
         Analisa:
 
@@ -279,7 +279,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps –e f`
 
-    ![App Screenshot](12.png)
+    ![App Screenshot](Assets/12.png)
 
         Analisa:
 
@@ -289,7 +289,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ pstree`
 
-    ![App Screenshot](13.png)
+    ![App Screenshot](Assets/13.png)
 
         Analisa:
 
@@ -299,7 +299,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ pstree | grep mingetty`
 
-    ![App Screenshot](14.png)
+    ![App Screenshot](Assets/14.png)
 
         Analisa:
 
@@ -309,7 +309,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ pstree –p`
 
-    ![App Screenshot](15.png)
+    ![App Screenshot](Assets/15.png)
 
         Analisa:
 
@@ -320,7 +320,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ pstree –h`
 
-    ![App Screenshot](16.png)
+    ![App Screenshot](Assets/16.png)
 
         Analisa:
 
@@ -330,7 +330,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
 8.  Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
-    ![App Screenshot](17.png)
+    ![App Screenshot](Assets/17.png)
 
         Analisa:
 
@@ -340,7 +340,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps –e | more`
 
-    ![App Screenshot](18.png)
+    ![App Screenshot](Assets/18.png)
 
     Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
@@ -352,7 +352,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps ax | more`
 
-    ![App Screenshot](19.png)
+    ![App Screenshot](Assets/19.png)
 
     Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
@@ -377,7 +377,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps ef | more`
 
-    ![App Screenshot](20.png)
+    ![App Screenshot](Assets/20.png)
 
     Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
@@ -389,7 +389,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps –eo pid,cmd | more`
 
-    ![App Screenshot](21.png)
+    ![App Screenshot](Assets/21.png)
 
     Jika halaman penuh et rlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
@@ -401,7 +401,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     `$ ps –eo pid,ppid,%mem,cmd | more`
 
-    ![App Screenshot](22.png)
+    ![App Screenshot](Assets/22.png)
 
         Analisa:
 
@@ -409,7 +409,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
 14. Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
-    ![App Screenshot](23.png)
+    ![App Screenshot](Assets/23.png)
 
         Analisa:
 
@@ -419,7 +419,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
 1.  Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
-    ![App Screenshot](24.png)
+    ![App Screenshot](Assets/24.png)
 
         Analisa:
 
@@ -431,7 +431,7 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
     Untuk menghentikannya gunakan Ctrl-C.
 
-    ![App Screenshot](25.png)
+    ![App Screenshot](Assets/25.png)
 
         Analisa:
 
@@ -443,7 +443,7 @@ Anda dapat menghentikannya dengan menekan Ctrl-C.
 
     `$ yes > /dev/null`
 
-    ![App Screenshot](26.png)
+    ![App Screenshot](Assets/26.png)
 
         Analisa:
 
@@ -454,7 +454,7 @@ Anda dapat menghentikannya dengan menekan Ctrl-C.
 
     `$ yes > /dev/null &`
 
-    ![App Screenshot](27.png)
+    ![App Screenshot](Assets/27.png)
 
         Analisa:
 
@@ -466,7 +466,7 @@ Tanda dalam "[]" menandakan nomor pekerjaan yang diikuti oleh PID.
 
     `$ jobs`
 
-    ![App Screenshot](28.png)
+    ![App Screenshot](Assets/28.png)
 
         Analisa:
 
@@ -476,7 +476,7 @@ Tanda dalam "[]" menandakan nomor pekerjaan yang diikuti oleh PID.
 
     `$ kill %<nomor job> contoh : kill %1`
 
-    ![App Screenshot](29.png)
+    ![App Screenshot](Assets/29.png)
 
         Analisa:
 
@@ -486,7 +486,7 @@ Tanda dalam "[]" menandakan nomor pekerjaan yang diikuti oleh PID.
 
     `$ jobs`
 
-    ![App Screenshot](30.png)
+    ![App Screenshot](Assets/30.png)
 
         Analisa:
 
