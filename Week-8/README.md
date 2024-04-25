@@ -335,7 +335,7 @@ Output:
 Hal ini berguna untuk memasukkan lebih banyak teks yang mencakup beberapa baris, juga melayani tujuan dokumentasi.
 
 ### Kesimpulan
-Singkatnya, kita telah mempelajari cara menambahkan komentar tunggal dan multi-baris dalam pemrograman skrip shell.
+Tentunya, kita telah mengeksplorasi bagaimana cara menyisipkan catatan singkat dan catatan lebih terperinci ke dalam skrip shell.
 
 ## Bash - Arrays
 
@@ -733,11 +733,11 @@ Ini juga disebut spasi putih, berisi tab, spasi, kembali, baris baru. Ini member
 
 Syntax :
 
-![App Screenshot](Assets/specialcharacters/1.png)
+![App Screenshot](Assets/special/1.png)
 
 Output:
 
-![App Screenshot](Assets/specialcharacters/3.png)
+![App Screenshot](Assets/special/3.png)
 
 Contoh di atas, echo adalah perintah yang diikuti spasi, dan string berisi spasi untuk kata.
 
@@ -749,8 +749,8 @@ Simbol tanda dolar digunakan untuk berbagai jenis perluasan parameter perluasan,
 
 Menambahkan & di akhir perintah memungkinkan Anda menjalankan perintah di latar belakang.
 
-![App Screenshot](Assets/specialcharacters/5.png)
-![App Screenshot](Assets/specialcharacters/6.png)
+![App Screenshot](Assets/special/5.png)<br>
+![App Screenshot](Assets/special/6.png)
 
 **Single quotes**
 
@@ -758,21 +758,21 @@ Single quotes (') are used to define a string without a special meaning. It mean
 
 Syntax :
 
-![App Screenshot](Assets/specialcharacters/7.png)
+![App Screenshot](Assets/special/7.png)
 
 Output :
 
-![App Screenshot](Assets/specialcharacters/8.png)
+![App Screenshot](Assets/special/8.png)
 
 Jika kutipan tunggal berisi kutipan tunggal bersarang, Anda harus menghindarinya menggunakan ```.
 
 Syntax :
 
-![App Screenshot](Assets/specialcharacters/9.png)
+![App Screenshot](Assets/special/9.png)
 
 Output :
 
-![App Screenshot](Assets/specialcharacters/10.png)
+![App Screenshot](Assets/special/10.png)
 
 **Double qoutes**
 
@@ -784,11 +784,11 @@ jika string tidak ingin memperluas variabelnya, maka Anda dapat keluar dari \ se
 
 Syntax :
 
-![App Screenshot](Assets/specialcharacters/11.png)
+![App Screenshot](Assets/special/11.png)
 
 Output :
 
-![App Screenshot](Assets/specialcharacters/12.png)
+![App Screenshot](Assets/special/12.png)
 
 **Backslash Character( \ )**
 
@@ -796,11 +796,11 @@ Karakter garis miring terbalik digunakan untuk keluar dari karakter dalam string
 
 Syntax :
 
-![App Screenshot](Assets/specialcharacters/13.png)
+![App Screenshot](Assets/special/13.png)
 
 Output :
 
-![App Screenshot](Assets/specialcharacters/14.png)
+![App Screenshot](Assets/special/14.png)
 
 **Comment ( # )**
 
@@ -809,11 +809,11 @@ Itu diabaikan oleh penerjemah bash.
 
 Syntax :
 
-![App Screenshot](Assets/specialcharacters/15.png)
+![App Screenshot](Assets/special/15.png)
 
 Output :
 
-![App Screenshot](Assets/specialcharacters/16.png)
+![App Screenshot](Assets/special/16.png)
 
 
 ## Bash - if elif else
@@ -1104,13 +1104,13 @@ Fungsi berisi nama fungsi yang diapit `{}`.
 
 Ini dapat dideklarasikan dengan 2 cara
 
-![App Screenshot](Assets/functions/11.png)
+![App Screenshot](Assets/functions/11.png)<br>
 
 ![App Screenshot](Assets/functions/7.png)
 
 dan keduanya memiliki output yang sama yaitu
 
-![App Screenshot](Assets/functions/6.png)
+![App Screenshot](Assets/functions/6.png)<br>
 
 ![App Screenshot](Assets/functions/8.png)
 
@@ -1224,10 +1224,10 @@ Catatan:
 
 ### Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara menggabungkan variabel string dengan berbagai cara.
+Dalam panduan ini, telah diajarkan cara mengombinasikan string dengan berbagai teknik.
 
-- Penambahan variabel sederhana dan operator aritmatika (`+=`) digunakan untuk penggabungan string yang dasar dan mudah.
-- Jika Anda memerlukan pemrosesan string yang lebih kompleks bersamaan dengan penggabungan, `printf` disarankan.
+- Anda dapat menggunakan penambahan variabel sederhana dan operator aritmatika (`+=`) untuk menggabungkan string secara mudah dan dasar.
+- Namun, untuk penggabungan yang lebih kompleks dan memerlukan pemrosesan string yang lebih maju, disarankan untuk menggunakan fungsi `printf`.
 
 ## Bash - Operator
 
@@ -1548,7 +1548,7 @@ Output
 
 ### Kesimpulan
 
-Skrip ini menunjukkan berbagai pendekatan untuk menangani nama file dan ekstensi di lingkungan Bash.
+Skrip ini mengeksplorasi berbagai metode untuk mengelola nama file dan ekstensi di lingkungan Bash.
 
 ## Bash - Split String
 
@@ -1568,11 +1568,11 @@ Perintah tersebut awk, sebuah utilitas Linux yang kompatibel dengan semua distri
 
 Input diberikan menggunakan simbol pipa (|), dan contoh di bawah ini menunjukkan pemisahan string yang mengandung titik dua ( :)
 
-![App Screenshot](Assets/splitstring/1.png)
+![App Screenshot](Assets/split/1.png)
 
 Output:
 
-![App Screenshot](Assets/splitstring/4.png)
+![App Screenshot](Assets/split/4.png)
 
 ### dibagi menggunakan variabel IFS
 
@@ -1580,21 +1580,21 @@ Di sini, string masukan terdiri dari elemen yang dipisahkan oleh hyphens. Variab
 
 Setiap elemen dicetak setelah tanda hubung dihilangkan.
 
-![App Screenshot](Assets/splitstring/5.png)
+![App Screenshot](Assets/split/5.png)
 
 Output:
 
-![App Screenshot](Assets/splitstring/6.png)
+![App Screenshot](Assets/split/6.png)
 
 ### Gunakan ekspansi Parameter dan loop
 
 Perluasan parameter digunakan untuk mengubah nilai variabel berdasarkan opsi yang ditentukan. Dalam hal ini, variabel string diubah menjadi array. Array kemudian diiterasi menggunakan sintaks for loop, mencetak setiap elemen ke konsol:
 
-![App Screenshot](Assets/splitstring/7.png)
+![App Screenshot](Assets/split/7.png)
 
 Output:
 
-![App Screenshot](Assets/splitstring/8.png)
+![App Screenshot](Assets/split/8.png)
 
 
 Berbagai cara untuk menangani manipulasi string, memungkinkan Anda memilih metode yang sesuai dengan kebutuhan Anda.
@@ -1611,31 +1611,31 @@ Metode pertama melibatkan penggunaan `${#variable}` sintaksis untuk mendapatkan 
 
 Dalam hal ini, jumlah karakter dalam variabel string.
 
-![App Screenshot](Assets/stringlength/1.png)
+![App Screenshot](Assets/string/1.png)
 
 Output:
 
-![App Screenshot](Assets/stringlength/3.png)
+![App Screenshot](Assets/string/3.png)
 
 Menggunakan Perintah wc -m
 
 Metode kedua melibatkan penggunaan perintah wc -m, baik secara langsung dengan string atau melalui variabel.
 
-![App Screenshot](Assets/stringlength/5.png)
+![App Screenshot](Assets/string/5.png)
 
 Dalam contoh ini, `echo -n "string"` digunakan untuk mencetak string tanpa baris baru ( `-n option`). Operator `|` pipa mengarahkan output dari perintah sisi kiri ke perintah sisi kanan, dan `wc -m` menghitung jumlah karakter dalam sebuah string.
 
 Output:
 
-![App Screenshot](Assets/stringlength/6.png)
+![App Screenshot](Assets/string/6.png)
 
 Menggunakan `expr` Perintah Metode lain melibatkan penggunaan `expr` perintah untuk mencari panjang string.
 
-![App Screenshot](Assets/stringlength/7.png)
+![App Screenshot](Assets/string/7.png)
 
 Output:
 
-![App Screenshot](Assets/stringlength/8.png)
+![App Screenshot](Assets/string/8.png)
 
 Di sini, `${}` mewakili substitusi ekspresi, mensubstitusi nilai ekspresi ke dalam string. `expr` mengeksekusi `expressions`, dan `length` merupakan argumen yang diteruskan `expr` untuk menemukan panjang string.
 
@@ -1643,11 +1643,11 @@ Di sini, `${}` mewakili substitusi ekspresi, mensubstitusi nilai ekspresi ke dal
 
 - menggunakan perintah awk `Awk` menyediakan cara lain untuk menghitung panjang string menggunakan ekspresi.
 
-![App Screenshot](Assets/stringlength/9.png)
+![App Screenshot](Assets/string/9.png)
 
 Output:
 
-![App Screenshot](Assets/stringlength/10.png)
+![App Screenshot](Assets/string/10.png)
 
 Dalam hal ini, `echo -n "$variable"` keluaran string tanpa baris baru, dan keluaran disalurkan `awk` menggunakan simbol pipa( `|`). Perintah `awk '{print length}'` menghitung dan mencetak panjang baris input.
 
@@ -1655,7 +1655,7 @@ Dengan menggabungkan metode di atas dalam sebuah ekspresi `${}`, Anda bisa menda
 
 ### Kesimpulan
 
-Posting ini telah membahas berbagai cara untuk menentukan panjang string di Bash. Pilihan pendekatan dapat bergantung pada preferensi Anda.
+Artikel ini telah membahas beragam metode untuk mengukur panjang string di Bash. Pilihan pendekatan bisa bervariasi tergantung pada preferensi individu.
 
 ## Bash - bashrc
 
@@ -1687,9 +1687,9 @@ jika Anda membuat perubahan apa pun pada file .bashrc, Perubahan tidak akan lang
 
 Bagaimana cara memuat ulang konfigurasi .bashrc tanpa login lagi? Jalankan perintah berikut di command prompt.
 
-![App Screenshot](Assets/stringlength/2.png)
-![App Screenshot](Assets/stringlength/3.png)
-![App Screenshot](Assets/stringlength/4.png)
+![App Screenshot](Assets/bashrc/2.png)<br>
+![App Screenshot](Assets/bashrc/3.png)<br>
+![App Screenshot](Assets/bashrc/4.png)
 
 ## Bash - Ternary Operator
 
@@ -1707,29 +1707,29 @@ Sintaksnya mirip dengan ekspresi kondisional if dan else. jika ekspresi benar, n
 
 Cara pertama, gunakan if-else dengan expression syntax.
 
-![App Screenshot](Assets/ternaryoperator/2.png)
+![App Screenshot](Assets/ternary/2.png)
 
 Output:
 
-![App Screenshot](Assets/ternaryoperator/4.png)
+![App Screenshot](Assets/ternary/4.png)
 
 Cara kedua, gunakan arithmetic expression menggunakan && dan || Syntaxnya adalah
 
-![App Screenshot](Assets/ternaryoperator/7.png)
+![App Screenshot](Assets/ternary/7.png)
 
 Output:
 
-![App Screenshot](Assets/ternaryoperator/8.png)
+![App Screenshot](Assets/ternary/8.png)
 
 Ada cara lain untuk menetapkan variabel, bukan ekspresi.
 
 dengan menggunakan mari kita dapat menetapkan variabel berdasarkan hasil ekspresi kondisi
 
-![App Screenshot](Assets/ternaryoperator/9.png)
+![App Screenshot](Assets/ternary/9.png)
 
 Output
 
-![App Screenshot](Assets/ternaryoperator/10.png)
+![App Screenshot](Assets/ternary/10.png)
 
 ## Bash - Lowercase
 
