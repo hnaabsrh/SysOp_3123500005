@@ -67,7 +67,8 @@ konfigurasi.
 
 # Perbedaan Legacy UEFI
 
-<img src="Assets/UEFI-vs-Legacy.png">
+<img src="Assets/UEFI-vs-Legacy.png"><br>
+<img src="Assets/uefi-dan-legacy-drawio.png">
 
 1. Definisi
 Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih
