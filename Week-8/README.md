@@ -1,4 +1,4 @@
-![image](https://github.com/hnaabsrh/SysOp_3123500005/assets/149747173/07e0a354-7b30-473c-b01f-5303896c983a)<div align="center">
+<div align="center">
     <h1 style="text-align: center;font-weight: bold">Praktikum 8<br>Praktek System Operasi</h1>
     <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
