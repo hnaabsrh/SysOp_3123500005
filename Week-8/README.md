@@ -261,15 +261,15 @@ Ada berbagai macam cara yang dapat kita lakukan
 ### Bagaimana cara membaca file demi baris di bash Shell?
 - menggunakan perulangan while
 
-![App Screenshot](Assets/loop-file/2.png)
+![App Screenshot](Assets/loopfile/2.png)
 
 Output
 
-![App Screenshot](img/loop-file/loop-sh-output.png)
+![App Screenshot](Assets/loopfile/3.png)
 
 Output diatas merupakan isi dari file `filename.txt` 
 
-![App Screenshot](img/loop-file/loop-txt.png)
+![App Screenshot](Assets/loopfile/4.png)
 
 ## Bash - Comments
 
