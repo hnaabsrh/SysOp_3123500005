@@ -304,11 +304,11 @@ Untuk komentar sebaris, gunakan simbol `#` di awal komentar. Komentar satu baris
 
 Spasi kosong setelah `#` simbol tidak diperlukan. Berikut ini adalah contoh komentar satu baris dalam skrip shell.
 
-![App Screenshot](img/comment/comment-single.png)
+![App Screenshot](Assets/comments/2.png)
 
 Output
 
-![App Screenshot](img/comment/comment-single-output.png)
+![App Screenshot](Assets/comments/4.png)
 
 ### Komentar multi-baris dalam skrip shell
 
@@ -318,8 +318,6 @@ Cara pertama untuk membuat komentar multi-baris adalah dengan memanfaatkan komen
 
 Syntax: 
 
-![App Screenshot](img/comment/comment-multi-1.png)
-
 Cara kedua untuk membuat komentar multi-baris adalah dengan mengapit beberapa baris di dalam (`:`) dan (`'`).
 
 Sintaks ini melibatkan:
@@ -328,11 +326,11 @@ Sintaks ini melibatkan:
 - Ini diikuti oleh beberapa baris komentar.
 - Komentar diakhiri dengan `'`. Berikut sintaksnya:
 
-![App Screenshot](img/comment/comment-multi-2.png)
+![App Screenshot](Assets/comments/5.png)
 
 Output:
 
-![App Screenshot](img/comment/comment-multi-output.png)
+![App Screenshot](Assets/comments/6.png)
 
 Hal ini berguna untuk memasukkan lebih banyak teks yang mencakup beberapa baris, juga melayani tujuan dokumentasi.
 
@@ -382,45 +380,45 @@ ${array_name[index]}
 
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak
 
-![App Screenshot](img/array/numbers-loop-through.png)
+![App Screenshot](Assets/arrays/10.png)
 
 Output:
 
-![App Screenshot](img/array/numbers-loop-through-output.png)
+![App Screenshot](Assets/arrays/12.png)
 
 ### Deklarasi Array string dan Loop
 
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak
 
-![App Screenshot](img/array/strings-loop-through.png)
+![App Screenshot](Assets/arrays/13.png)
 
 Output:
 
-![App Screenshot](img/array/strings-loop-through-output.png)
+![App Screenshot](Assets/arrays/14.png)
 
 ### Akses elemen pertama array
 
 Dalam elemen Array, indeks elemen Pertama adalah nol, dan array[0] mengembalikan elemen pertama
 
-![App Screenshot](img/array/first-element.png)
+![App Screenshot](Assets/arrays/15.png)
 
 Output:
 
-![App Screenshot](img/array/first-element-output.png)
+![App Screenshot](Assets/arrays/16.png)
 
 ### Dapatkan element terakhir dalam sebuah array
 
 Dalam skrip bash, Anda dapat menggunakan indeks=-1 untuk mendapatkan elemen array terakhir.
 
-![App Screenshot](img/array/last-element-1.png)
+![App Screenshot](Assets/arrays/17.png)
 
 Dengan versi bash 4.0 terbaru, Anda dapat menggunakan sintaks di bawah ini untuk membaca elemen terakhir.
 
-![App Screenshot](img/array/last-element-2.png)
+![App Screenshot](Assets/arrays/19.png)
 
 Output:
 
-![App Screenshot](img/array/last-element-output.png)
+![App Screenshot](Assets/arrays/20.png)
 
 ### Iterate atau Loop element array
 
@@ -428,39 +426,39 @@ For loop digunakan untuk mengulangi elemen.
 
 Berikut adalah contoh contoh loop array untuk mencetak semua elemen
 
-![App Screenshot](img/array/iterate-loop.png)
+![App Screenshot](Assets/arrays/21.png)
 
 Output:
 
-![App Screenshot](img/array/iterate-loop-output.png)
+![App Screenshot](Assets/arrays/22.png)
 
 Cara lain untuk mencetak indeks dan elemen array menggunakan for loop.
 
-![App Screenshot](img/array/iterate-loop-2.png)
+![App Screenshot](Assets/arrays/23.png)
 
 Output:
 
-![App Screenshot](img/array/iterate-loop-2-output.png)
+![App Screenshot](Assets/arrays/24.png)
 
 ### Cetak semua elemen array
 
 Gunakan [@] atau [*] untuk mencetak semua elemen array.
 
-![App Screenshot](img/array/print-all.png)
+![App Screenshot](Assets/arrays/25.png)
 
 Output:
 
-![App Screenshot](img/array/print-all-output.png)
+![App Screenshot](Assets/arrays/27.png)
 
 ### Hapus elemen dari array
 
 Anda dapat menghapus elemen dari array menggunakan `unset` indeks tertentu.
 
-![App Screenshot](img/array/remove-element.png)
+![App Screenshot](Assets/arrays/28.png)
 
 Output:
 
-![App Screenshot](img/array/remove-element-output.png)
+![App Screenshot](Assets/arrays/29.png)
 
 ### Menambahkan elemen ke array
 
@@ -472,11 +470,11 @@ array[index]=value
 
 Contoh penambahan elemen awal dan akhir serta tengah
 
-![App Screenshot](img/array/add-element.png)
+![App Screenshot](Assets/arrays/30.png)
 
 Output:
 
-![App Screenshot](img/array/add-element-output.png)
+![App Screenshot](Assets/arrays/31.png)
 
 ### Panjang sebuah array
 
@@ -484,11 +482,11 @@ Dalam hal ini, Temukan jumlah semua elemen dalam array.
 
 Script Shell menyediakan `#`
 
-![App Screenshot](img/array/length-of-array.png)
+![App Screenshot](Assets/arrays/32.png)
 
 Output:
 
-![App Screenshot](img/array/length-of-array-output.png)
+![App Screenshot](Assets/arrays/33.png)
 
 ### Array cheat sheet
 
@@ -590,11 +588,11 @@ Cara menulis skrip shell di bash
 - Tulis perintah dalam file
 - Simpan file sebagai `hello.sh`
 
-![App Screenshot](img/expansion/expansion.png)
+![App Screenshot](Assets/expansion/3.png)
 
 Output:
 
-![App Screenshot](img/expansion/execute.png)
+![App Screenshot](Assets/expansion/2.png)
 
 ## Bash - Conditional Expression
 
