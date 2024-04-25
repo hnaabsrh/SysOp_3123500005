@@ -1,4 +1,4 @@
-<div align="center">
+![image](https://github.com/hnaabsrh/SysOp_3123500005/assets/149747173/07e0a354-7b30-473c-b01f-5303896c983a)<div align="center">
     <h1 style="text-align: center;font-weight: bold">Praktikum 8<br>Praktek System Operasi</h1>
     <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
@@ -612,11 +612,11 @@ Bash menyediakan operator logika pada FIle dan direktori untuk menguji ekspresi 
 
 Syntax:
 
-![App Screenshot](img/conditional-expression/code.png)
+![App Screenshot](Assets/condionalexpression/3.png)
 
 Output:
 
-![App Screenshot](img/conditional-expression/output.png)
+![App Screenshot](Assets/condionalexpression/4.png)
 
 conditional_expressions berisi opsi, dan jalur file, yang selalu mengembalikan nilai benar atau salah.
 
@@ -719,11 +719,11 @@ pattern1)
 
 Contohnya sebagai berikut:
 
-![App Screenshot](img/case-statements/code.png)
+![App Screenshot](Assets/casestatements/3.png)
 
 Output:
 
-![App Screenshot](img/case-statements/output.png)
+![App Screenshot](Assets/casestatements/4.png)
 
 ## Bash - Special Characters
 
@@ -733,11 +733,11 @@ Ini juga disebut spasi putih, berisi tab, spasi, kembali, baris baru. Ini member
 
 Syntax :
 
-![App Screenshot](img/special-characters/1.png)
+![App Screenshot](Assets/specialcharacters/1.png)
 
 Output:
 
-![App Screenshot](img/special-characters/1-o.png)
+![App Screenshot](Assets/specialcharacters/3.png)
 
 Contoh di atas, echo adalah perintah yang diikuti spasi, dan string berisi spasi untuk kata.
 
@@ -749,7 +749,8 @@ Simbol tanda dolar digunakan untuk berbagai jenis perluasan parameter perluasan,
 
 Menambahkan & di akhir perintah memungkinkan Anda menjalankan perintah di latar belakang.
 
-![App Screenshot](img/special-characters/2.png)
+![App Screenshot](Assets/specialcharacters/5.png)
+![App Screenshot](Assets/specialcharacters/6.png)
 
 **Single quotes**
 
@@ -757,21 +758,21 @@ Single quotes (') are used to define a string without a special meaning. It mean
 
 Syntax :
 
-![App Screenshot](img/special-characters/3.png)
+![App Screenshot](Assets/specialcharacters/7.png)
 
 Output :
 
-![App Screenshot](img/special-characters/3-o.png)
+![App Screenshot](Assets/specialcharacters/8.png)
 
 Jika kutipan tunggal berisi kutipan tunggal bersarang, Anda harus menghindarinya menggunakan ```.
 
 Syntax :
 
-![App Screenshot](img/special-characters/4.png)
+![App Screenshot](Assets/specialcharacters/9.png)
 
 Output :
 
-![App Screenshot](img/special-characters/4-o.png)
+![App Screenshot](Assets/specialcharacters/10.png)
 
 **Double qoutes**
 
@@ -783,11 +784,11 @@ jika string tidak ingin memperluas variabelnya, maka Anda dapat keluar dari \ se
 
 Syntax :
 
-![App Screenshot](img/special-characters/5.png)
+![App Screenshot](Assets/specialcharacters/11.png)
 
 Output :
 
-![App Screenshot](img/special-characters/5-o.png)
+![App Screenshot](Assets/specialcharacters/12.png)
 
 **Backslash Character( \ )**
 
@@ -795,11 +796,11 @@ Karakter garis miring terbalik digunakan untuk keluar dari karakter dalam string
 
 Syntax :
 
-![App Screenshot](img/special-characters/6.png)
+![App Screenshot](Assets/specialcharacters/13.png)
 
 Output :
 
-![App Screenshot](img/special-characters/6-o.png)
+![App Screenshot](Assets/specialcharacters/14.png)
 
 **Comment ( # )**
 
@@ -808,11 +809,11 @@ Itu diabaikan oleh penerjemah bash.
 
 Syntax :
 
-![App Screenshot](img/special-characters/7.png)
+![App Screenshot](Assets/specialcharacters/15.png)
 
 Output :
 
-![App Screenshot](img/special-characters/7-o.png)
+![App Screenshot](Assets/specialcharacters/16.png)
 
 
 ## Bash - if elif else
@@ -866,11 +867,11 @@ Dalam sintaks di atas:
 
 Contoh
 
-![App Screenshot](img/if-elif-else/if-code.png)
+![App Screenshot](Assets/ifelifelse/4.png)
 
 Output:
 
-![App Screenshot](img/if-elif-else/if-output.png)
+![App Screenshot](Assets/ifelifelse/6.png)
 
 ### If-else Conditional Statements
 
@@ -891,11 +892,11 @@ Dalam sintaks di atas:
 - Blok kode dalam `else` pernyataan dijalankan jika kondisinya adalah `false`.
 - Setiap pernyataan `if-else` harus diakhiri dengan `fi`.
 
-![App Screenshot](img/if-elif-else/if-else-code.png)
+![App Screenshot](Assets/ifelifelse/8.png)
 
 Output:
 
-![App Screenshot](img/if-elif-else/if-else-output.png)
+![App Screenshot](Assets/ifelifelse/9.png)
 
 Dalam contoh ini, jika usianya lebih dari 60 tahun, maka akan dihasilkan “Warga Negara Lanjut Usia”; jika tidak, akan ditampilkan “Bukan Warga Negara Lanjut Usia”.
 
@@ -920,11 +921,11 @@ fi
 
 Contoh:
 
-![App Screenshot](img/if-elif-else/if-elif-else-code.png)
+![App Screenshot](Assets/ifelifelse/11.png)
 
 Output
 
-![App Screenshot](img/if-elif-else/if-elif-else-output.png)
+![App Screenshot](Assets/ifelifelse/12.png)
 
 Dalam contoh ini, skrip memeriksa apakah usia lebih besar dari 60, kurang dari 14, atau tidak termasuk dalam kategori apa pun, dan menampilkan pesan yang sesuai.
 
@@ -958,11 +959,11 @@ done
 
 Contoh:
 
-![App Screenshot](img/loops/for-loop.png)
+![App Screenshot](Assets/loops/3.png)
 
 Output:
 
-![App Screenshot](img/loops/for-loop-output.png)
+![App Screenshot](Assets/loops/5.png)
 
 ### for loop index
 
@@ -976,11 +977,11 @@ done
 
 Contoh
 
-![App Screenshot](img/loops/for-index.png)
+![App Screenshot](Assets/loops/7.png)
 
 Output:
 
-![App Screenshot](img/loops/for-index-output.png)
+![App Screenshot](Assets/loops/8.png)
 
 Ini mencetak angka 0 sampai 5. 
 
@@ -998,11 +999,11 @@ done
 
 Contoh:
 
-![App Screenshot](img/loops/while-loop.png)
+![App Screenshot](Assets/loops/10.png)
 
 Output:
 
-![App Screenshot](img/loops/while-loop-output.png)
+![App Screenshot](Assets/loops/11.png)
 
 While loop diatas mencetak bilangan 0-100, program berjalan selama kondisi `[[ i -lt 100 ]]` benar. Variabel `i` akan terus mengincrement 1 dan mencetak nilainya. Jika kondisi salah (mencapai 100), maka program akan selesai.
 
@@ -1022,11 +1023,11 @@ done
 
 Contoh
 
-![App Screenshot](img/loops/until-loop.png)
+![App Screenshot](Assets/loops/17.png)
 
 Output:
 
-![App Screenshot](img/loops/until-loop-output.png)
+![App Screenshot](Assets/loops/18.png)
 
 Program ini berjalan sama dengan program yang ada pada *while loop* hanya saja ini menggunakan *until loop*. Variable `i` akan mengincrement 1 sampai 99 dan mencetak nilainya. Program akan berjalan selama kondisi `[[ i -eq 100 ]]` benar. Jika kondisi salah (mencapai 100) maka program akan berhenti.
 
@@ -1041,11 +1042,11 @@ Di bash, Expressions dibuat menggunakan `(())` tanda kurung dengan operan dan op
 
 Contoh 
 
-![App Screenshot](img/append-string/math-expression.png)
+![App Screenshot](Assets/appendstring/2.png)
 
 Output:
 
-![App Screenshot](img/append-string/math-expression-output.png)
+![App Screenshot](Assets/appendstring/5.png)
 
 Arthematic expressions dibuat menggunakan operator dibawah ini 
 - Operator Aritmatik
@@ -1057,11 +1058,11 @@ Operator perbandingan digunakan untuk mengecek satu sama lain dengan membandingk
 
 Contoh:
 
-![App Screenshot](img/append-string/math-comparison.png)
+![App Screenshot](Assets/appendstring/6.png)
 
 Output:
 
-![App Screenshot](img/append-string/math-comparison-output.png)
+![App Screenshot](Assets/appendstring/7.png)
 
 ### Bash Arithmetic Expansion
 
@@ -1073,11 +1074,11 @@ $((expression))
 
 Contoh menghitung nilai rata-rata menggunakan expansion. Setelah perhitungan dilakukan, output diganti dengan ekspresi.
 
-![App Screenshot](img/append-string/athematic-expansion.png)
+![App Screenshot](Assets/appendstring/9.png)
 
 Output
 
-![App Screenshot](img/append-string/athematic-expansion-output.png)
+![App Screenshot](Assets/appendstring/10.png)
 
 ### Kapan Menggunakan Expression dan Expansion Aritmatik
 
@@ -1103,15 +1104,15 @@ Fungsi berisi nama fungsi yang diapit `{}`.
 
 Ini dapat dideklarasikan dengan 2 cara
 
-![App Screenshot](img/functions/declare-1.png)
+![App Screenshot](Assets/functions/1.png)
 
-![App Screenshot](img/functions/declare-2.png)
+![App Screenshot](Assets/functions/3.png)
 
 dan keduanya memiliki output yang sama yaitu
 
-![App Screenshot](img/functions/declare-1-output.png)
+![App Screenshot](Assets/functions/1.png)
 
-![App Screenshot](img/functions/declare-2-output.png)
+![App Screenshot](Assets/functions/1.png)
 
 ### Cara meneruskan parameter ke suatu fungsi
 
