@@ -68,7 +68,25 @@ konfigurasi.
 # Perbedaan Legacy UEFI
 
 <img src="Assets/UEFI-vs-Legacy.png"><br>
-<img src="Assets/uefi-dan-legacy-drawio.png">
+<img src="Assets/uefidanlegacy.png">
+
+
+Dalam hal proses booting, perbedaan signifikan antara BIOS Legacy dan UEFI terletak pada cara mereka memulai sistem. Berikut adalah perbedaan utama dalam proses booting keduanya:
+
+1. **BIOS Legacy:**
+   - Proses booting dimulai dengan POST (Power-On Self Test), yang menguji perangkat keras sistem untuk memastikan semuanya berfungsi dengan baik.
+   - Setelah itu, BIOS akan mencari perangkat boot yang diprioritaskan dalam urutan yang telah ditentukan (biasanya hard drive atau CD-ROM) dan mencoba untuk mem-boot dari perangkat tersebut.
+   - BIOS Legacy menggunakan MBR (Master Boot Record) sebagai metode partisi dasar, yang memiliki batasan dalam ukuran partisi dan jumlah partisi yang bisa didukung.
+
+2. **UEFI:**
+   - Proses booting dimulai dengan inisialisasi firmware UEFI, yang menyediakan antarmuka grafis dan lebih banyak opsi konfigurasi.
+   - UEFI memuat driver dan aplikasi yang diperlukan langsung dari sistem file yang terdapat dalam partisi EFI (Extensible Firmware Interface).
+   - UEFI mendukung partisi GPT (GUID Partition Table), yang memungkinkan lebih banyak partisi dan ukuran partisi yang lebih besar daripada MBR.
+   - UEFI dapat memanfaatkan Secure Boot untuk memverifikasi keaslian firmware dan perangkat lunak yang di-boot, meningkatkan keamanan sistem.
+
+Dengan demikian, perbedaan signifikan dalam proses booting antara BIOS Legacy dan UEFI terletak pada cara mereka menginisialisasi sistem dan memuat sistem operasi, dengan UEFI menawarkan antarmuka yang lebih modern dan fleksibel serta kemampuan untuk bekerja dengan partisi yang lebih besar dan lebih banyak.
+
+Dan berikut adalah perbedaan utama Legacy dan UEFI :
 
 1. Definisi
 Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih
