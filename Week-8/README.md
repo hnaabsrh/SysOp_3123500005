@@ -1104,15 +1104,15 @@ Fungsi berisi nama fungsi yang diapit `{}`.
 
 Ini dapat dideklarasikan dengan 2 cara
 
-![App Screenshot](Assets/functions/1.png)
+![App Screenshot](Assets/functions/11.png)
 
-![App Screenshot](Assets/functions/3.png)
+![App Screenshot](Assets/functions/7.png)
 
 dan keduanya memiliki output yang sama yaitu
 
-![App Screenshot](Assets/functions/1.png)
+![App Screenshot](Assets/functions/6.png)
 
-![App Screenshot](Assets/functions/1.png)
+![App Screenshot](Assets/functions/8.png)
 
 ### Cara meneruskan parameter ke suatu fungsi
 
@@ -1123,11 +1123,11 @@ Parameter dapat diakses menggunakan $1 $2 $3.. $n
 
 Contoh
 
-![App Screenshot](img/functions/pass-parameter.png)
+![App Screenshot](Assets/functions/9.png)
 
 Output
 
-![App Screenshot](img/functions/pass-parameter-output.png)
+![App Screenshot](Assets/functions/10.png)
 
 ## Bash - Append String
 
@@ -1135,27 +1135,20 @@ Output
 
 Mulailah dengan mendeklarasikan dua variabel string dalam skrip Bash, yang dapat dicetak ke konsol menggunakan echo dengan mengapit variabel dalam tanda kutip ganda.
 
-![App Screenshot](img/append-string-2/simple-variable-append-1.png)
+![App Screenshot](Assets/appendstring2/1.png)
 
 Output:
 
-![App Screenshot](img/append-string-2/simple-variable-append-1-output.png)
+![App Screenshot](Assets/appendstring2/4.png)
 
-Juga dapat menambahkan tanpa tanda kutip ganda
-
-![App Screenshot](img/append-string-2/simple-variable-append-2.png)
-
-Output:
-
-![App Screenshot](img/append-string-2/simple-variable-append-2-output.png)
 
 Contoh lain melibatkan penggabungan string ke variabel yang sama dan mencetaknya ke konsol:
 
-![App Screenshot](img/append-string-2/concatenating.png)
+![App Screenshot](Assets/appendstring2/7.png)
 
 Output:
 
-![App Screenshot](img/append-string-2/concatenating-output.png)
+![App Screenshot](Assets/appendstring2/8.png)
 
 Pendekatan ini memiliki pro dan kontra
 
@@ -1174,11 +1167,11 @@ Misalnya.
 
 Berikut adalah contoh kode
 
-![App Screenshot](img/append-string-2/shorthand-arithmetic.png)
+![App Screenshot](Assets/appendstring2/9.png)
 
 Output:
 
-![App Screenshot](img/append-string-2/shorthand-arithmetic-output.png)
+![App Screenshot](Assets/appendstring2/10.png)
 
 Catatan:
 
@@ -1189,11 +1182,11 @@ Catatan:
 
 `printf` digunakan untuk memformat string dengan berbagai opsi pemformatan yang kompleks. Kita dapat menggunakan `printf` perintah untuk menggabungkan string. Formatnya adalah `%s%s`, menambahkan dua variabel string.
 
-![App Screenshot](img/append-string-2/printf.png)
+![App Screenshot](Assets/appendstring2/11.png)
 
 Output:
 
-![App Screenshot](img/append-string-2/printf-output.png)
+![App Screenshot](Assets/appendstring2/12.png)
 
 Catatan: Tidak mudah untuk memahami printf dengan opsi yang diformat
 
@@ -1216,11 +1209,11 @@ string adalah string masukan
 
 Contoh:
 
-![App Screenshot](img/append-string-2/here-string.png)
+![App Screenshot](Assets/appendstring2/15.png)
 
 Output:
 
-![App Screenshot](img/append-string-2/here-string-output.png)
+![App Screenshot](Assets/appendstring2/14.png)
 
 Dalam contoh ini, string kedua ditambahkan ke string pertama menggunakan operator string di sini.
 
@@ -1325,11 +1318,11 @@ Berikut ini adalah operator Perbandingan.
 
 menggunakan operator `-eq` dalam `if fi` pernyataan kondisional
 
-![App Screenshot](img/operators/equal.png)
+![App Screenshot](Assets/operators/4.png)
 
 Output:
 
-![App Screenshot](img/operators/equal-failed.png)
+![App Screenshot](Assets/operators/6.png)
 
 Output diatas failed dikarenakan nilai dari variable first dan second memang tidak sama atau tidak equal.
 
@@ -1345,11 +1338,11 @@ Output diatas failed dikarenakan nilai dari variable first dan second memang tid
 
 Berikut Contohnya:
 
-![App Screenshot](img/operators/not-equal.png)
+![App Screenshot](Assets/operators/7.png)
 
 Output
 
-![App Screenshot](img/operators/not-equal-output.png)
+![App Screenshot](Assets/operators/8.png)
 
 ### Other Operators
 
@@ -1363,21 +1356,15 @@ Output
 
 ### Cara memeriksa apakah 2 angka sama atau tidak di bash
 
-Kode gagal:
-
-![App Screenshot](img/number-comparison/comparison-1.png)
 
 Kode sukses:
 
-![App Screenshot](img/number-comparison/comparison-2.png)
+![App Screenshot](Assets/numbercomparison/1.png)
 
-Output gagal:
-
-![App Screenshot](img/number-comparison/comparison-1-failed.png)
 
 Output sukses:
 
-![App Screenshot](img/number-comparison/comparison-2-success.png)
+![App Screenshot](Assets/numbercomparison/4.png)
 
 Beberapa skrip shell tidak mendukung (()), gunakan [[]] dengan operator Perbandingan
 
@@ -1403,25 +1390,18 @@ Berikut ini adalah operator Perbandingan.
 
 menggunakan operator `-eq` dalam `if fi` pernyataan kondisional
 
-Kode gagal:
-
-![App Screenshot](img/number-comparison/eq-1.png)
-
 Kode sukses:
 
-![App Screenshot](img/number-comparison/eq-2.png)
+![App Screenshot](Assets/numbercomparison/5.png)
 
-Output gagal:
+Output sukses:
 
-![App Screenshot](img/number-comparison/eq-1-failed.png)
+![App Screenshot](Assets/numbercomparison/6.png)
 
-Output Sukses:
-
-![App Screenshot](img/number-comparison/eq-2-success.png)
 
 Dapat juga dilakukan dengan operator ternary
 
-![App Screenshot](img/number-comparison/ternary.png)
+![App Screenshot](Assets/numbercomparison/7.png)
 
 ## Bash - Check Directory
 
@@ -1437,11 +1417,11 @@ Ekspresi kondisional menggunakan `-d` opsi untuk memeriksa apakah direktori ters
 
 Ini sebuah contoh
 
-![App Screenshot](img/check-directory/check-directory-1.png)
+![App Screenshot](Assets/checkdirectory/1.png)
 
 Output:
 
-![App Screenshot](img/check-directory/check-directory-1-output.png)
+![App Screenshot](Assets/checkdirectory/4.png)
 
 Harap dicatat bahwa tambahkan spasi setelah `[` dan sebelum `-d`.
 
@@ -1454,11 +1434,11 @@ Dalam contoh ini, menggunakan blok kondisional if-else.
 
 Ini kodenya
 
-![App Screenshot](img/check-directory/check-mkdir.png)
+![App Screenshot](Assets/checkdirectory/6.png)
 
 Output
 
-![App Screenshot](img/check-directory/check-mkdir-output.png)
+![App Screenshot](Assets/checkdirectory/7.png)
 
 **Periksa keberadaan direktori menggunakan sintaks ternary**
 
@@ -1466,21 +1446,21 @@ Alternatifnya, ekspresi kondisional ternary digunakan sebagai pengganti ekspresi
 
 Berikut adalah contoh ekspresi kondisional
 
-![App Screenshot](img/check-directory/ternary-syntax.png)
+![App Screenshot](Assets/checkdirectory/8.png)
  
 Output:
 
-![App Screenshot](img/check-directory/ternary-syntax-output.png)
+![App Screenshot](Assets/checkdirectory/9.png)
 
 **Periksa apakah ada banyak direktori** Terkadang, Kami ingin memeriksa apakah ada banyak direktori.
 
 Kita harus menggunakan pernyataan kondisional if dengan operator logika AND(&&).
 
-![App Screenshot](img/check-directory/multiple.png)
+![App Screenshot](Assets/checkdirectory/10.png)
 
 Output:
 
-![App Screenshot](img/check-directory/multiple-output.png)
+![App Screenshot](Assets/checkdirectory/12.png)
 
 **Periksa apakah direktori ada dan dapat ditulis serta dieksekusi**
 
@@ -1490,21 +1470,21 @@ Dalam contoh ini, Kode memeriksa hal-hal di bawah ini
 - jika ada, Folder tersebut memiliki izin untuk menulis dan dieksekusi.
 - Terakhir, Cetak pesan string
 
-![App Screenshot](img/check-directory/editable.png)
+![App Screenshot](Assets/checkdirectory/13.png)
 
 Output:
 
-![App Screenshot](img/check-directory/editable-output.png)
+![App Screenshot](Assets/checkdirectory/14.png)
 
 **Periksa file atau direktori yang ada**
 
 Terkadang, kami ingin memeriksa apakah file atau direktori tersebut ada. Opsi -e memeriksa file atau direktori untuk jalur yang diberikan ada atau tidak.
 
-![App Screenshot](img/check-directory/check-e.png)
+![App Screenshot](Assets/checkdirectory/15.png)
 
 Output:
 
-![App Screenshot](img/check-directory/check-e-output.png)
+![App Screenshot](Assets/checkdirectory/16.png)
 
 ## Bash - File Name
 
@@ -1518,11 +1498,11 @@ nama dasar digunakan untuk menghapus direktori dan mengembalikan nama file untuk
 
 Sebagai contoh menggunakan kode yang sudah dimodifikasi sebagai berikut:
 
-![App Screenshot](img/file-name/filename-extension.png)
+![App Screenshot](Assets/filename/1.png)
 
 Output:
 
-![App Screenshot](img/file-name/filename-extension-output.png)
+![App Screenshot](Assets/filename/4.png)
 
 ### Ekstrak nama file tanpa ekstensi
 
@@ -1534,11 +1514,11 @@ Awalnya, basename perintah ini digunakan untuk menghilangkan direktori dan mengh
 
 Ekspresi ini secara efektif menghapus ekstensi dari nama file.
 
-![App Screenshot](img/file-name/file-no-extension.png)
+![App Screenshot](Assets/filename/5.png)
 
 Output:
 
-![App Screenshot](img/file-name/file-no-extension-output.png)
+![App Screenshot](Assets/filename/6.png)
 
 ### Ekstrak ekstensi untuk jalur file
 
@@ -1548,11 +1528,11 @@ Misalnya, pertimbangkan jalur /home/john/run.sh yang akan menjadi ekstensi yang 
 
 Awalnya, basename perintah ini digunakan untuk menghapus jalur direktori dan mengembalikan nama file untuk jalur yang ditentukan, dan nama file ini kemudian digunakan bersama dengan sintaks ekspresi untuk mengembalikan ekstensi saja.
 
-![App Screenshot](img/file-name/extract-extension.png)
+![App Screenshot](Assets/filename/8.png)
 
 Output:
 
-![App Screenshot](img/file-name/extract-extension-output.png)
+![App Screenshot](Assets/filename/7.png)
 
 Berikut adalah contoh komprehensif yang menunjukkan cara mendapatkan nama file dengan atau tanpa ekstensi file. Setelah menjalankan skrip di bawah ini, skrip tersebut akan dicetak
 
@@ -1560,11 +1540,11 @@ Berikut adalah contoh komprehensif yang menunjukkan cara mendapatkan nama file d
 - hanya nama file tanpa ekstensi,
 - dan ekstensinya saja.
 
-![App Screenshot](img/file-name/conclusion.png)
+![App Screenshot](Assets/filename/8.png)
 
 Output
 
-![App Screenshot](img/file-name/conclusion-output.png)
+![App Screenshot](Assets/filename/9.png)
 
 ### Kesimpulan
 
@@ -1588,11 +1568,11 @@ Perintah tersebut awk, sebuah utilitas Linux yang kompatibel dengan semua distri
 
 Input diberikan menggunakan simbol pipa (|), dan contoh di bawah ini menunjukkan pemisahan string yang mengandung titik dua ( :)
 
-![App Screenshot](img/split-string/split-awk.png)
+![App Screenshot](Assets/splitstring/1.png)
 
 Output:
 
-![App Screenshot](img/split-string/split-awk-output.png)
+![App Screenshot](Assets/splitstring/4.png)
 
 ### dibagi menggunakan variabel IFS
 
@@ -1600,21 +1580,21 @@ Di sini, string masukan terdiri dari elemen yang dipisahkan oleh hyphens. Variab
 
 Setiap elemen dicetak setelah tanda hubung dihilangkan.
 
-![App Screenshot](img/split-string/split-ifs.png)
+![App Screenshot](Assets/splitstring/5.png)
 
 Output:
 
-![App Screenshot](img/split-string/split-ifs-output.png)
+![App Screenshot](Assets/splitstring/6.png)
 
 ### Gunakan ekspansi Parameter dan loop
 
 Perluasan parameter digunakan untuk mengubah nilai variabel berdasarkan opsi yang ditentukan. Dalam hal ini, variabel string diubah menjadi array. Array kemudian diiterasi menggunakan sintaks for loop, mencetak setiap elemen ke konsol:
 
-![App Screenshot](img/split-string/split-loop.png)
+![App Screenshot](Assets/splitstring/7.png)
 
 Output:
 
-![App Screenshot](img/split-string/split-loop-output.png)
+![App Screenshot](Assets/splitstring/8.png)
 
 
 Berbagai cara untuk menangani manipulasi string, memungkinkan Anda memilih metode yang sesuai dengan kebutuhan Anda.
@@ -1631,31 +1611,31 @@ Metode pertama melibatkan penggunaan `${#variable}` sintaksis untuk mendapatkan 
 
 Dalam hal ini, jumlah karakter dalam variabel string.
 
-![App Screenshot](img/string-length/count-1.png)
+![App Screenshot](Assets/stringlength/1.png)
 
 Output:
 
-![App Screenshot](img/string-length/count-1-output.png)
+![App Screenshot](Assets/stringlength/3.png)
 
 Menggunakan Perintah wc -m
 
 Metode kedua melibatkan penggunaan perintah wc -m, baik secara langsung dengan string atau melalui variabel.
 
-![App Screenshot](img/string-length/count-m.png)
+![App Screenshot](Assets/stringlength/5.png)
 
 Dalam contoh ini, `echo -n "string"` digunakan untuk mencetak string tanpa baris baru ( `-n option`). Operator `|` pipa mengarahkan output dari perintah sisi kiri ke perintah sisi kanan, dan `wc -m` menghitung jumlah karakter dalam sebuah string.
 
 Output:
 
-![App Screenshot](img/string-length/count-m-output.png)
+![App Screenshot](Assets/stringlength/6.png)
 
 Menggunakan `expr` Perintah Metode lain melibatkan penggunaan `expr` perintah untuk mencari panjang string.
 
-![App Screenshot](img/string-length/count-expr.png)
+![App Screenshot](Assets/stringlength/7.png)
 
 Output:
 
-![App Screenshot](img/string-length/count-expr-output.png)
+![App Screenshot](Assets/stringlength/8.png)
 
 Di sini, `${}` mewakili substitusi ekspresi, mensubstitusi nilai ekspresi ke dalam string. `expr` mengeksekusi `expressions`, dan `length` merupakan argumen yang diteruskan `expr` untuk menemukan panjang string.
 
@@ -1663,11 +1643,11 @@ Di sini, `${}` mewakili substitusi ekspresi, mensubstitusi nilai ekspresi ke dal
 
 - menggunakan perintah awk `Awk` menyediakan cara lain untuk menghitung panjang string menggunakan ekspresi.
 
-![App Screenshot](img/string-length/count-awk.png)
+![App Screenshot](Assets/stringlength/9.png)
 
 Output:
 
-![App Screenshot](img/string-length/count-awk-output.png)
+![App Screenshot](Assets/stringlength/10.png)
 
 Dalam hal ini, `echo -n "$variable"` keluaran string tanpa baris baru, dan keluaran disalurkan `awk` menggunakan simbol pipa( `|`). Perintah `awk '{print length}'` menghitung dan mencetak panjang baris input.
 
@@ -1686,7 +1666,7 @@ File .bashrc adalah file skrip bash yang dijalankan dalam kasus berikut
 
 File ini disembunyikan secara default karena file dimulai dengan . disembunyikan.
 
-![App Screenshot](img/bachrc/bashrc.png)
+![App Screenshot](Assets/bashrc/6.png)
 
 File .bashrc adalah skrip yang dijalankan saat pengguna login. File ini terletak di direktori home pengguna. Berisi environment variables dan user preferences untuk dikonfigurasi di dalam file ini
 
@@ -1707,7 +1687,9 @@ jika Anda membuat perubahan apa pun pada file .bashrc, Perubahan tidak akan lang
 
 Bagaimana cara memuat ulang konfigurasi .bashrc tanpa login lagi? Jalankan perintah berikut di command prompt.
 
-![App Screenshot](img/bachrc/reload.png)
+![App Screenshot](Assets/stringlength/2.png)
+![App Screenshot](Assets/stringlength/3.png)
+![App Screenshot](Assets/stringlength/4.png)
 
 ## Bash - Ternary Operator
 
@@ -1725,29 +1707,29 @@ Sintaksnya mirip dengan ekspresi kondisional if dan else. jika ekspresi benar, n
 
 Cara pertama, gunakan if-else dengan expression syntax.
 
-![App Screenshot](img/ternary-operator/firstway.png)
+![App Screenshot](Assets/ternaryoperator/2.png)
 
 Output:
 
-![App Screenshot](img/ternary-operator/firstway-output.png)
+![App Screenshot](Assets/ternaryoperator/4.png)
 
 Cara kedua, gunakan arithmetic expression menggunakan && dan || Syntaxnya adalah
 
-![App Screenshot](img/ternary-operator/secondway.png)
+![App Screenshot](Assets/ternaryoperator/7.png)
 
 Output:
 
-![App Screenshot](img/ternary-operator/secondway-output.png)
+![App Screenshot](Assets/ternaryoperator/8.png)
 
 Ada cara lain untuk menetapkan variabel, bukan ekspresi.
 
 dengan menggunakan mari kita dapat menetapkan variabel berdasarkan hasil ekspresi kondisi
 
-![App Screenshot](img/ternary-operator/let.png)
+![App Screenshot](Assets/ternaryoperator/9.png)
 
 Output
 
-![App Screenshot](img/ternary-operator/let-output.png)
+![App Screenshot](Assets/ternaryoperator/10.png)
 
 ## Bash - Lowercase
 
@@ -1771,19 +1753,19 @@ tr input_format output_format
 
 Contoh:
 
-![App Screenshot](img/Lowercase/lowercase-1.png)
+![App Screenshot](Assets/lowercase/3.png)
 
 Output:
 
-![App Screenshot](img/Lowercase/lowercase-1-output.png)
+![App Screenshot](Assets/lowercase/5.png)
 
 bisa juga menggunakan:
 
-![App Screenshot](img/Lowercase/lowercase-2.png)
+![App Screenshot](Assets/lowercase/6.png)
 
 Output:
 
-![App Screenshot](img/Lowercase/lowercase-2-output.png)
+![App Screenshot](Assets/lowercase/7.png)
 
 Catatan: `tr` berfungsi dengan `ASCII` dan tidak mendukung UTF karakter.
 
@@ -1793,11 +1775,11 @@ Untuk mengubah string menjadi huruf kecil menggunakan perintah `awk`, `tolower` 
 
 Hasilnya kemudian diteruskan ke perintah echo menggunakan operator pipa:
 
-![App Screenshot](img/Lowercase/lowercase-awk.png)
+![App Screenshot](Assets/lowercase/8.png)
 
 Output:
 
-![App Screenshot](img/Lowercase/lowercase-awk-output.png)
+![App Screenshot](Assets/lowercase/9.png)
 
 Metode ini paling baik untuk karakter ASCII dan UTF.
 
@@ -1805,11 +1787,11 @@ Metode ini paling baik untuk karakter ASCII dan UTF.
 
 lc adalah alias untuk huruf kecil.
 
-![App Screenshot](img/Lowercase/lowercase-perl.png)
+![App Screenshot](Assets/lowercase/10.png)
 
 Output:
 
-![App Screenshot](img/Lowercase/lowercase-perl-output.png)
+![App Screenshot](Assets/lowercase/11.png)
 
 - **gunakan ekspansi Parameter Bash 4.0 memperkenalkan utilitas manipulasi string bawaan. Untuk mengonversi string menjadi huruf kecil, cukup tambahkan dua `commas` ke string. Ini juga disebut sintaks perluasan parameter.**
 
@@ -1817,19 +1799,19 @@ Sintaksnya adalah `${variable[options]}`.
 
 Contoh:
 
-![App Screenshot](img/Lowercase/lowercase-comma.png)
+![App Screenshot](Assets/lowercase/12.png)
 
 Output:
 
-![App Screenshot](img/Lowercase/lowercase-comma-output.png)
+![App Screenshot](Assets/lowercase/13.png)
 
 Atau
 
-![App Screenshot](img/Lowercase/lowercase-comma-2.png)
+![App Screenshot](Assets/lowercase/14.png)
 
 Output:
 
-![App Screenshot](img/Lowercase/lowercase-comma-2-output.png)
+![App Screenshot](Assets/lowercase/15.png)
 
 Di sini, `${msg,,}` gunakan `,,` opsi untuk mengonversi variabel menjadi huruf kecil.
 
@@ -1860,19 +1842,19 @@ tr input_format output_format
 
 Contoh: 
 
-![App Screenshot](img/uppercase/uppercase-1.png)
+![App Screenshot](Assets/uppercase/3.png)
 
 Output:
 
-![App Screenshot](img/uppercase/uppercase-1-output.png)
+![App Screenshot](Assets/uppercase/5.png)
 
 Alternatif lain:
 
-![App Screenshot](img/uppercase/uppercase-2.png)
+![App Screenshot](Assets/uppercase/6.png)
 
 Output:
 
-![App Screenshot](img/uppercase/uppercase-2-output.png)
+![App Screenshot](Assets/uppercase/7.png)
 
 Catatan: `tr` berfungsi dengan `ASCII` dan tidak mendukung UTF karakter.
 
@@ -1880,42 +1862,41 @@ Catatan: `tr` berfungsi dengan `ASCII` dan tidak mendukung UTF karakter.
 
 Untuk mengubah string menjadi huruf besar menggunakan perintah `awk`, `toupper` fungsinya digabungkan dengan awk. Hasilnya kemudian diteruskan ke perintah echo menggunakan operator pipa:
 
-![App Screenshot](img/uppercase/uppercase-awk.png)
+![App Screenshot](Assets/uppercase/8.png)
 
 Output:
 
-![App Screenshot](img/uppercase/uppercase-awk-output.png)
+![App Screenshot](Assets/uppercase/9.png)
 
 Yang terbaik adalah bekerja dengan ASCII dan UTF karakter.
 
 = **dalam versi bash 4.0 bash 4.0menyediakan utilitas manipulasi string bawaan. Menambahkan dua tanda sirkumfleks (^) ke sebuah string akan membuat string menjadi string huruf besar.**
 
-![App Screenshot](img/uppercase/uppercase-pangkat.png)
+![App Screenshot](Assets/uppercase/10.png)
 
 Output:
 
-![App Screenshot](img/uppercase/uppercase-pangkat-output.png)
+![App Screenshot](Assets/uppercase/11.png)
 
 - **menggunakan Perl dalam skrip bash**
 
 `print uc` perintah di Perl mengubah string menjadi huruf besar
 
-![App Screenshot](img/uppercase/uppercase-perl.png)
+![App Screenshot](Assets/uppercase/12.png)
 
 Output:
 
-![App Screenshot](img/uppercase/uppercase-perl-output.png)
+![App Screenshot](Assets/uppercase/13.png)
 
 - **Gunakan sintaks perluasan parameter Bash 4.0 menyediakan utilitas manipulasi string bawaan. Menambahkan dua tanda sirkumfleks (^) ke sebuah string menjadikannya string huruf besar, juga disebut sintaks perluasan parameter.**
 
 Sintaksnya adalah `${variable[options]}`
 
-![App Screenshot](img/uppercase/last.png)
+![App Screenshot](Assets/uppercase/14.png)
 
 Output:
 
-![App Screenshot](img/uppercase/last-output.png)
-
+![App Screenshot](Assets/uppercase/15.png)
 Sintaks perluasan parameter mengubah string menjadi huruf besar. `${message^^}` berisi `^^` opsi untuk mengubah string pesan variabel menjadi huruf besar.
 
 Fitur ini tersedia di Bash versi 4.0 ke atas.
@@ -1928,31 +1909,31 @@ Fitur ini tersedia di Bash versi 4.0 ke atas.
 - Gunakan pernyataan if untuk membandingkan string dengan substring yang diinginkan menggunakan operator kesetaraan ( ==) dan wildcard (*).
 - Terakhir, cetak string jika substring ditemukan.
 
-![App Screenshot](img/substring/comparison.png)
+![App Screenshot](Assets/substring/2.png)
 
 Output:
 
-![App Screenshot](img/substring/comparison-output.png)
+![App Screenshot](Assets/substring/4.png)
 
 ### Gunakan Ekspresi Reguler untuk Menemukan Substring
 
 Operator `=~` memfasilitasi pencarian substring dalam string tertentu, digunakan dalam blok if.
 
-![App Screenshot](img/substring/regular.png)
+![App Screenshot](Assets/substring/5.png)
 
 Output:
 
-![App Screenshot](img/substring/regular-output.png)
+![App Screenshot](Assets/substring/6.png)
 
 ### Gunakan perintah grep
 
 Perintah grep digunakan untuk mencari string tertentu, disalurkan ke string utama untuk perbandingan.
 
-![App Screenshot](img/substring/grep.png)
+![App Screenshot](Assets/substring/7.png)
 
 Output:
 
-![App Screenshot](img/substring/grep-output.png)
+![App Screenshot](Assets/substring/8.png)
 
 Metode ini menawarkan pendekatan berbeda untuk memeriksa apakah suatu string berisi substring tertentu, sehingga memberikan fleksibilitas untuk kasus penggunaan yang berbeda.
 
@@ -1989,19 +1970,19 @@ Dalam contoh di bawah ini,
 - `variable1` dideklarasikan tetapi kosong
 - `variable2` tidak dideklarasikan dan tidak disetel.
 
-![App Screenshot](img/variable-set/variable-set-1.png)
+![App Screenshot](Assets/variableset/2.png)
 
 Output:
 
-![App Screenshot](img/variable-set/variable-set-1-output.png)
+![App Screenshot](Assets/variableset/4.png)
 
 Cara lain untuk memeriksa suatu variabel adalah dengan menyetel menggunakan -v opsi
 
-![App Screenshot](img/variable-set/variable-v.png)
+![App Screenshot](Assets/variableset/5.png)
 
 Output:
 
-![App Screenshot](img/variable-set/variable-v-output.png)
+![App Screenshot](Assets/variableset/6.png)
 
 ### Bagaimana cara memeriksa apakah variabel tidak disetel di skrip bash?
 
@@ -2014,29 +1995,29 @@ Dalam contoh di bawah ini,
 - variable1 dideklarasikan tetapi kosong
 - variable2 tidak dideklarasikan dan tidak disetel.
 
-![App Screenshot](img/variable-set/variable-unset.png)
+![App Screenshot](Assets/variableset/7.png)
 
 Output:
 
-![App Screenshot](img/variable-set/variable-unset-output.png)
+![App Screenshot](Assets/variableset/8.png)
 
 ### Cara mengecek variabel kosong atau tidak kosong
 
 Tutorial ini memeriksa pemeriksaan variabel dibandingkan dengan spasi dan membungkus ekspresi ini di dalam [[]].
 
-![App Screenshot](img/variable-set/var-empty-1.png)
+![App Screenshot](Assets/variableset/9.png)
 
 Output:
 
-![App Screenshot](img/variable-set/var-empty-1-output.png)
+![App Screenshot](Assets/variableset/10.png)
 
 Hal yang sama juga dapat ditulis menggunakan variabel dalam tanda kutip ganda yang dibungkus dalam tanda kurung tunggal [].
 
-![App Screenshot](img/variable-set/var-empty-2.png)
+![App Screenshot](Assets/variableset/11.png)
 
 Output:
 
-![App Screenshot](img/variable-set/var-empty-2-output.png)
+![App Screenshot](Assets/variableset/12.png)
 
 Mari kita periksa juga untuk tidak mengosongkan menggunakan ! operator.
 
@@ -2044,27 +2025,27 @@ Berikut adalah kode untuk `example checks if a variable is non-empty`.
 
 SATU ARAH,
 
-![App Screenshot](img/variable-set/var-not-empty.png)
+![App Screenshot](Assets/variableset/13.png)
 
 Output:
 
-![App Screenshot](img/variable-set/var-not-empty-output.png)
+![App Screenshot](Assets/variableset/14.png)
 
 Cara lain:
 
-![App Screenshot](img/variable-set/var-not-empty-2.png)
+![App Screenshot](Assets/variableset/15.png)
 
 Output
 
-![App Screenshot](img/variable-set/var-not-empty-2-output.png)
+![App Screenshot](Assets/variableset/16.png)
 
 Opsi penggunaan -z lainnya untuk memeriksa variabel disetel dan kosong atau tidak kosong menggunakan kode di bawah ini
 
-![App Screenshot](img/variable-set/var-empty-z.png)
+![App Screenshot](Assets/variableset/17.png)
 
 Output:
 
-![App Screenshot](img/variable-set/var-empty-z-output.png)
+![App Screenshot](Assets/variableset/18.png)
 
 ## Bash - Iterate Nos
 
@@ -2078,27 +2059,27 @@ Terkadang, Kami ingin membuat nama file dengan nama yang berisi angka yang dihas
 
 **menggunakan alat seq seq menghasilkan urutan angka.**
 
-![App Screenshot](img/iterate-nos/seq-tool.png)
+![App Screenshot](Assets/iteratenos/2.png)
 
 Output:
 
-![App Screenshot](img/iterate-nos/seq-tool-output.png)
+![App Screenshot](Assets/iteratenos/4.png)
 
 **menggunakan perulangan for**
 
-![App Screenshot](img/iterate-nos/for-loop.png)
+![App Screenshot](Assets/iteratenos/5.png)
 
 Output:
 
-![App Screenshot](img/iterate-nos/for-loop-output.png)
+![App Screenshot](Assets/iteratenos/6.png)
 
 **while loop**
 
-![App Screenshot](img/iterate-nos/while-loop.png)
+![App Screenshot](Assets/iteratenos/7.png)
 
 Output:
 
-![App Screenshot](img/iterate-nos/while-loop-output.png)
+![App Screenshot](Assets/iteratenos/8.png)
 
 ### Kesimpulan
 
