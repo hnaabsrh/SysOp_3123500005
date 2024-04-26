@@ -358,33 +358,33 @@ Analisa: Proses induk mencetak pesan yang menyatakan identitasnya sebagai "I am 
 Source Code
 
     #include <stdio.h>
-#include <unistd.h>
-#include <sys/wait.h>
+    #include <unistd.h>
+    #include <sys/wait.h>
 
-#define SIZE 4
+    #define SIZE 4
 
-void multiplyMatrices(int mat1[SIZE][SIZE], int mat2[SIZE][SIZE], int result[SIZE][SIZE]) {
+    void multiplyMatrices(int mat1[SIZE][SIZE], int mat2[SIZE][SIZE], int result[SIZE][SIZE]) {
     for (int i = 0; i < SIZE; i++) {
         for (int j = 0; j < SIZE; j++) {
             result[i][j] = 0;
             for (int k = 0; k < SIZE; k++) {
                 result[i][j] += mat1[i][k] * mat2[k][j];
-            }
-        }
+              }
+          }
+       }
     }
-}
 
-void printMatrix(int mat[SIZE][SIZE]) {
+    void printMatrix(int mat[SIZE][SIZE]) {
     for (int i = 0; i < SIZE; i++) {
         for (int j = 0; j < SIZE; j++) {
             printf("%d ", mat[i][j]);
         }
         printf("\n");
+      }
     }
-}
 
-int main() {
-  int mat1[SIZE][SIZE] = {{1, 2, 3, 4},
+    int main() {
+    int mat1[SIZE][SIZE] = {{1, 2, 3, 4},
                           {5, 6, 7, 8},
                           {9, 10, 11, 12},
                           {13, 14, 15, 16}};
@@ -412,11 +412,11 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 Output
 
-![App Screenshot](Assets/outputmatriks.png)
+![App Screenshot](Assets/outputmatriks2.png)
 
 Analisa: Kode di atas merupakan sebuah program perkalian 2 matriks [4 x 4] dalam bahasa C yang menggunakan fork() untuk melakukan proses multiproses.
 
