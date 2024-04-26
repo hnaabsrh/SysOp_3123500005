@@ -358,64 +358,61 @@ Analisa: Proses induk mencetak pesan yang menyatakan identitasnya sebagai "I am 
 Source Code
 
     #include <stdio.h>
-    #include <stdlib.h>
-    #include <unistd.h>
-    #include <sys/wait.h> // untuk wait()
+#include <unistd.h>
+#include <sys/wait.h>
 
-    #define ROWS 4
-    #define COLS 4
+#define SIZE 4
 
-    void printMatrix(int matrix[ROWS][COLS]) {
-        for (int i = 0; i < ROWS; i++) {
-            for (int j = 0; j < COLS; j++) {
-                printf("%d ", matrix[i][j]);
+void multiplyMatrices(int mat1[SIZE][SIZE], int mat2[SIZE][SIZE], int result[SIZE][SIZE]) {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            result[i][j] = 0;
+            for (int k = 0; k < SIZE; k++) {
+                result[i][j] += mat1[i][k] * mat2[k][j];
             }
-            printf("\n");
         }
     }
+}
 
-    int main() {
-    int matrix[ROWS][COLS];
-    int scalar = 2; // Skalar yang akan digunakan untuk perkalian
-
-    // Menginisialisasi matriks
-    for (int i = 0; i < ROWS; i++) {
-        for (int j = 0; j < COLS; j++) {
-            matrix[i][j] = i * j;
+void printMatrix(int mat[SIZE][SIZE]) {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            printf("%d ", mat[i][j]);
         }
+        printf("\n");
     }
+}
 
-    // Menampilkan matriks awal
-    printf("Matriks Awal:\n");
-    printMatrix(matrix);
+int main() {
+  int mat1[SIZE][SIZE] = {{1, 2, 3, 4},
+                          {5, 6, 7, 8},
+                          {9, 10, 11, 12},
+                          {13, 14, 15, 16}};
+    int mat2[SIZE][SIZE] = {{2, 0, 0, 2},
+                            {0, 3, 0, 0},
+                            {0, 0, 4, 0},
+                            {2, 0, 0, 5}};
+    int result[SIZE][SIZE];
 
-    // Proses fork
-    pid_t pid = fork();
+    pid_t pid;
+    pid = fork();
 
-    if (pid == 0) {
-        // Proses anak
-        int resultMatrix[ROWS][COLS]; // Matriks untuk menyimpan hasil operasi perkalian
-        printf("\nProses Anak - Matriks Hasil:\n");
-        for (int i = 0; i < ROWS; i++) {
-            for (int j = 0; j < COLS; j++) {
-                resultMatrix[i][j] = matrix[i][j] * scalar;
-                printf("%d ", resultMatrix[i][j]);
-            }
-            printf("\n");
-        }
-        exit(0); // Keluar dari proses anak
-    } else if (pid > 0) {
-        // Proses induk
-        wait(NULL); // Menunggu proses anak selesai
-        printf("\nProses Induk Selesai.\n");
-    } else {
-        // Fork gagal
-        fprintf(stderr, "Fork gagal.\n");
+    if (pid == 0) { // Child process
+        multiplyMatrices(mat1, mat2, result);
+        printf("Child Process Result:\n");
+        printMatrix(result);
+    } else if (pid > 0) { // Parent process
+        wait(NULL);
+        printf("Parent Process Result:\n");
+        multiplyMatrices(mat1, mat2, result);
+        printMatrix(result);
+    } else { // Fork failed
+        printf("Fork failed!\n");
         return 1;
     }
 
     return 0;
-    }
+}
 
 Output
 
