@@ -18,26 +18,21 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
     <hr>
 </div>
 
-## Daftar Isi
-
-[1. Producer Consumer Semaphore](#producer-consumer-semaphore)
-
-[2. Producer Consumer Wake-Sleep thread](#producer-consumer-wake-sleep-thread)
 
 ## Producer Consumer Semaphore
 
-![App Screenshot](Week-9/Assets/1.png)
+![App Screenshot](Assets/semaphore.png)
 
-![App Screenshot](Week-9/Assets/2.png)
+![App Screenshot](Assets/semaphoree.png)
 
 
-Analisa: Program diatas contoh implementasi dari Producer Consumer Semaphore problem dalam bahasa C. Dalam kasus ini, menu yang terdapat dalam program terdapat 3 menu, yaitu pertama Producer, kedua Consumer, dan ketiga Exit. Menu pertama Producer adalah untuk membuat data dengan maximal data sebanyak 3 jika user memilih secara terus menerus tanpa memilih selain menu pertama lebih dari 3 kali maka akan mencetak pesan "Buffer your full!!" begitu juga sebaliknya jika user memilih menu kedua dan lebih dari 3 kali tanpa memilih menu selain menu kedua maka akan mencetak pesan "Buffer is empty!!". Menu ketiga untuk keluar dari program.
+Analisa: Program ini merupakan contoh implementasi dari masalah Producer-Consumer menggunakan semaphore dalam bahasa C. Dalam program ini, terdapat tiga opsi menu: "Producer", "Consumer", dan "Exit". Ketika opsi "Producer" dipilih, program akan menciptakan data dengan maksimum tiga data. Jika pengguna terus memilih opsi "Producer" tanpa memilih opsi lain lebih dari tiga kali, program akan menampilkan pesan "Buffer your full!!". Sebaliknya, jika opsi "Consumer" dipilih dan pengguna terus memilihnya tanpa memilih opsi lain lebih dari tiga kali, program akan menampilkan pesan "Buffer is empty!!". Opsi "Exit" digunakan untuk keluar dari program.
 
 ## Producer Consumer Wake-Sleep thread
 
-![App Screenshot](Week-9/Assets/3.png)
+![App Screenshot](Assets/wakesleep.png)
 
-Analisa : Program diatas contoh implementasi dari Producer Consumer Semaphore problem menggunakan thread dalam bahasa C++. Dalam kasus ini, program menggunakan thread untuk menjalankan produsen dan konsumen secara bersamaan. Dengan menggunakan mekanisme seperti kunci gembok (mutex) dan lampu lalu lintas (variabel kondisi), program memastikan bahwa hanya satu proses yang dapat mengakses sumber daya pada satu waktu. Saat produsen menghasilkan sesuatu, ia memberitahu konsumen bahwa ada barang baru yang tersedia. Begitu juga ketika konsumen mengonsumsi barang, ia memberi tahu produsen bahwa ia sudah mengambil barang tersebut. Dengan demikian, program memastikan bahwa proses produksi dan konsumsi berjalan dengan aman dan terkoordinasi.
+Analisa : Contoh program ini mengimplementasikan permasalahan Produsen Konsumen menggunakan semaphore dan thread dalam bahasa C++. Dalam skenario ini, thread digunakan untuk menjalankan produsen dan konsumen secara bersamaan. Dengan menggunakan konsep kunci gembok (mutex) dan variabel kondisi sebagai lampu lalu lintas, program menjamin bahwa hanya satu proses yang dapat mengakses sumber daya pada satu waktu tertentu. Ketika produsen menghasilkan barang, ia memberi tahu konsumen bahwa barang baru telah tersedia. Begitu pula ketika konsumen mengonsumsi barang, ia memberi tahu produsen bahwa barang tersebut telah diambil. Dengan demikian, program memastikan bahwa proses produksi dan konsumsi berjalan dengan aman dan terkoordinasi.
 
 ### Referensi
 
