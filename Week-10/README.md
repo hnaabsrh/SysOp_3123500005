@@ -463,6 +463,95 @@ Thread Local Storage (TLS) adalah metode di mana setiap thread dalam proses mult
 
 ## Soal dan Jawaban Seputar Materi Threads
 
+1. Jelaskan bagaimana sistem operasi menjadwalkan thread!
+
+    **Jawab**:
+
+    Sistem operasi menjadwalkan thread dengan menggunakan algoritma penjadwalan. Algoritma ini menentukan thread mana yang akan dijalankan pada CPU pada saat tertentu. Beberapa algoritma penjadwalan yang umum adalah:
+
+    • **Penjadwalan round-robin**: Algoritma round-robin menjadwalkan thread secara bergiliran, memberikan setiap thread jatah waktu CPU yang sama
+
+    • **Penjadwalan prioritas**: Algoritma prioritas menjadwalkan thread berdasarkan tingkat prioritasnya, dengan thread yang memiliki prioritas lebih tinggi dijalankan lebih dulu
+
+    • **Penjadwalan multilevel feedback**: Algoritma multilevel feedback membagi thread menjadi beberapa kelas prioritas dan menjadwalkan thread dalam setiap kelas menggunakan algoritma penjadwalan yang berbeda
+
+2. Apa saja keuntungan dan kekurangan menggunakan thread blocking dan thread non-blocking?
+
+    **Jawab**:
+
+    **Thread blocking**
+
+    **Keuntungan**:
+
+    • Lebih mudah diimplementasikan karena programmer tidak perlu khawatir tentang sinkronisasi antar thread
+
+    • Dapat meningkatkan kinerja program dengan memungkinkan pelaksanaan beberapa tugas secara bersamaan
+
+    **Kekurangan**:
+
+    • Potensi terjadinya deadlock jika dua atau lebih thread saling menunggu satu sama lain untuk menyelesaikan tugas
+
+    • Potensi terjadinya livelock jika dua atau lebih thread terus-menerus bertukar sumber daya, tetapi tidak ada yang dapat menyelesaikan tugasnya
+
+    **Thread non-blocking**
+
+    **Keuntungan**:
+
+    • Dapat meningkatkan responsivitas program dengan memungkinkan pengguna berinteraksi dengan program saat tugas lain masih diproses
+
+    • Dapat membantu menghindari deadlock dan livelock
+
+    **Kekurangan**:
+
+    • Lebih kompleks untuk diprogram karena programmer harus mempertimbangkan sinkronisasi antar thread
+
+    • Dapat menyebabkan overhead performa yang lebih tinggi karena thread non-blocking perlu memeriksa status kejadian secara berkala
+
+3. Jelaskan perbedaan antara thread blocking dan non-blocking!
+
+    **Jawab**:
+
+    • **Thread blocking**: Thread blocking terjadi ketika sebuah thread dihentikan sementara karena menunggu suatu kejadian, seperti penyelesaian operasi I/O atau ketersediaan sumber daya yang diperlukan. Saat thread blocking, thread tersebut tidak bisa menggunakan CPU dan sumber daya lainnya.
+
+    • **Thread non-blocking**: Thread non-blocking adalah thread yang bisa tetap berjalan meskipun sedang menunggu suatu kejadian. Thread non-blocking biasanya memanfaatkan teknik polling atau callback untuk memeriksa status kejadian secara berkala.
+
+4. Apa saja masalah yang dapat terjadi dalam pemrograman multi-thread?
+
+    **Jawab**:
+
+    Beberapa masalah yang dapat terjadi dalam pemrograman multi-thread adalah:
+
+    • **Deadlock**: Deadlock adalah situasi di mana dua atau lebih thread saling menunggu satu sama lain untuk menyelesaikan tugasnya,     sehingga tidak ada thread yang dapat melanjutkan
+
+    • **Race condition**: Race condition adalah situasi di mana hasil suatu program bergantung pada urutan eksekusi thread
+
+    • **Livelock**: Livelock adalah situasi di mana dua atau lebih thread terus-menerus bertukar sumber daya, tetapi tidak ada yang dapat menyelesaikan tugasnya
+
+5. Apa saja mekanisme sinkronisasi yang digunakan dalam thread?
+
+    **Jawab**:
+
+    Mekanisme sinkronisasi digunakan untuk memastikan bahwa thread yang berbeda mengakses data dan sumber daya secara aman dan terkoordinasi. Beberapa mekanisme sinkronisasi yang umum digunakan adalah:
+
+    • **Mutex**: Mutex (mutual exclusion) adalah kunci yang hanya dapat dimiliki oleh satu thread pada satu waktu
+
+    • **Semaphore**: Semaphore adalah variabel yang nilainya dapat digunakan untuk membatasi jumlah thread yang dapat mengakses sumber daya tertentu
+
+    • **Condition variable**: Condition variable adalah variabel yang dapat digunakan untuk mensinkronisasi thread yang menunggu peristiwa tertentu terjadi
+
+6. Apa saja faktor yang dapat memengaruhi kinerja program multi-threaded?
+
+    **Jawab**:
+
+    Banyak faktor yang dapat memengaruhi kinerja program multi-threaded, antara lain:
+
+    • **Jumlah thread**: Semakin banyak thread yang digunakan, semakin tinggi overhead performa program
+
+    • **Sinkronisasi**: Mekanisme sinkronisasi dapat menyebabkan overhead performa, terutama jika thread sering mengakses sumber daya yang sama
+
+    • **Penjadwalan**: Algoritma penjadwalan yang digunakan dapat memengaruhi kinerja program
+
+    • **Beban kerja**: Jenis tugas yang dijalankan oleh thread dapat memengaruhi kinerja program
 ## Referensi
 
 - https://www.geeksforgeeks.org/benefits-of-multithreading-in-operating-system/
