@@ -460,3 +460,16 @@ Thread Local Storage (TLS) adalah metode di mana setiap thread dalam proses mult
 
         ![App Screenshot](Assets/11.png)
 - **struct task_struct** poin untuk memproses struktur data (shared or unique)
+
+## Soal dan Jawaban Seputar Materi Threads
+
+## Referensi
+
+- https://www.geeksforgeeks.org/benefits-of-multithreading-in-operating-system/
+- https://www.geeksforgeeks.org/difference-between-concurrency-and-parallelism/
+- https://www.geeksforgeeks.org/challanges-in-programming-for-multicore-system/
+- https://www.geeksforgeeks.org/difference-between-user-level-thread-and-kernel-level-thread/
+- https://www.geeksforgeeks.org/multi-threading-models-in-process-management/
+- https://www.geeksforgeeks.org/posix-threads-in-os/
+- https://www.geeksforgeeks.org/java-threads/
+- https://www.geeksforgeeks.org/threading-issues/
