@@ -38,7 +38,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 ### Analisis
 
-    Program di atas adalah implementasi algoritma penjadwalan First Come First Serve (FCFS) dalam bahasa C. Algoritma ini mengatur proses sesuai urutan kedatangan mereka. Program meminta jumlah proses, waktu kedatangan, dan waktu burst untuk setiap proses. Proses diurutkan berdasarkan waktu kedatangan menggunakan bubble sort. Kemudian, program mengeksekusi proses-proses tersebut secara berurutan, menghitung waktu selesai, Turnaround Time, dan Waiting Time. Akhirnya, program mencetak rata-rata Turnaround Time dan rata-rata Waiting Time dari semua proses yang dieksekusi. Ini membantu dalam mengevaluasi kinerja algoritma FCFS.
+Program di atas adalah implementasi algoritma penjadwalan First Come First Serve (FCFS) dalam bahasa C. Algoritma ini mengatur proses sesuai urutan kedatangan mereka. Program meminta jumlah proses, waktu kedatangan, dan waktu burst untuk setiap proses. Proses diurutkan berdasarkan waktu kedatangan menggunakan bubble sort. Kemudian, program mengeksekusi proses-proses tersebut secara berurutan, menghitung waktu selesai, Turnaround Time, dan Waiting Time. Akhirnya, program mencetak rata-rata Turnaround Time dan rata-rata Waiting Time dari semua proses yang dieksekusi. Ini membantu dalam mengevaluasi kinerja algoritma FCFS.
     
 
 ## Shortest Job First Algorithm
