@@ -525,7 +525,7 @@ Apa perbedaan antara pendekatan asynchronous dan deferred dalam pembatalan threa
    - Titik pembatalan adalah saat-saat tertentu dalam kode thread di mana pembatalan aman karena thread tidak berada di tengah-tengah operasi yang kritis.
    - Menyediakan cara yang lebih terstruktur untuk menghentikan thread, memastikan bahwa tidak ada sumber daya yang bocor dan operasi yang belum selesai dapat ditangani dengan benar sebelum thread dihentikan.
 
-### Soal 4
+### Soal 5
 
 **Pertanyaan:**
 Apa itu Thread Local Storage (TLS) dan apa kegunaannya dalam pemrograman multithreading?
