@@ -20,12 +20,6 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 ## Daftar Isi
 - [Esai Threads](#esai-threads)
-    - [Multithread Server Architecture](#multithread-server-architecture)
-    - [Multicore Programming](#multicore-programming)
-    - [Threads Library](#threads-library)
-    - [Implicit Threading](#implicit-threading)
-    - [Threading Issues](#threading-issues)
-    - [Operating System Examples](#threading-issues)
 - [Soal dan Jawaban Seputar Materi Threads](#soal-dan-jawaban-seputar-materi-threads)
 - [Referensi](#referensi)
 
@@ -463,95 +457,91 @@ Thread Local Storage (TLS) adalah metode di mana setiap thread dalam proses mult
 
 ## Soal dan Jawaban Seputar Materi Threads
 
-1. Jelaskan bagaimana sistem operasi menjadwalkan thread!
+### Soal 1
 
-    **Jawab**:
+**Pertanyaan:**
+Jelaskan bagaimana multithreading dapat meningkatkan responsivitas sebuah server dibandingkan dengan pendekatan single-threaded. Sertakan contoh situasi di mana pendekatan multithreaded lebih menguntungkan.
 
-    Sistem operasi menjadwalkan thread dengan menggunakan algoritma penjadwalan. Algoritma ini menentukan thread mana yang akan dijalankan pada CPU pada saat tertentu. Beberapa algoritma penjadwalan yang umum adalah:
+**Jawaban:**
+Multithreading dapat meningkatkan responsivitas sebuah server karena memungkinkan eksekusi proses lainnya untuk tetap berlanjut meskipun sebagian proses sedang diblokir. Dalam pendekatan single-threaded, server hanya bisa melayani satu permintaan pada satu waktu, sehingga pengguna lain harus menunggu hingga permintaan tersebut selesai diproses. Hal ini dapat menyebabkan waktu tunggu yang lama dan responsivitas yang buruk.
 
-    • **Penjadwalan round-robin**: Algoritma round-robin menjadwalkan thread secara bergiliran, memberikan setiap thread jatah waktu CPU yang sama
+Contoh situasi di mana pendekatan multithreaded lebih menguntungkan adalah pada server web yang melayani banyak permintaan HTTP dari pengguna. Dalam server single-threaded, jika ada satu permintaan yang memerlukan waktu lama (misalnya, membaca data besar dari basis data), semua permintaan lainnya harus menunggu hingga permintaan tersebut selesai. Dengan multithreading, server dapat membuat thread baru untuk setiap permintaan, sehingga permintaan yang memerlukan waktu lama tidak menghalangi permintaan lainnya, dan server dapat terus merespon pengguna lain secara cepat.
 
-    • **Penjadwalan prioritas**: Algoritma prioritas menjadwalkan thread berdasarkan tingkat prioritasnya, dengan thread yang memiliki prioritas lebih tinggi dijalankan lebih dulu
+### Soal 2
 
-    • **Penjadwalan multilevel feedback**: Algoritma multilevel feedback membagi thread menjadi beberapa kelas prioritas dan menjadwalkan thread dalam setiap kelas menggunakan algoritma penjadwalan yang berbeda
+**Pertanyaan:**
+Sebutkan tiga perbedaan utama antara user threads dan kernel threads, dan jelaskan mengapa perbedaan tersebut penting dalam konteks pemrograman multithreaded.
 
-2. Apa saja keuntungan dan kekurangan menggunakan thread blocking dan thread non-blocking?
+**Jawaban:**
+1. **Implementasi:**
+   - **User Threads:** Diimplementasikan oleh perpustakaan thread di tingkat pengguna, tanpa dukungan langsung dari kernel.
+   - **Kernel Threads:** Diimplementasikan dan dikelola oleh sistem operasi (kernel).
 
-    **Jawab**:
+   Perbedaan ini penting karena thread tingkat pengguna lebih cepat dibuat dan dikelola karena tidak memerlukan panggilan sistem, namun tidak dapat memanfaatkan multiprocessing sepenuhnya tanpa dukungan kernel.
 
-    **Thread blocking**
+2. **Waktu Pergantian Konteks:**
+   - **User Threads:** Memiliki waktu pergantian konteks yang lebih sedikit karena dilakukan di ruang pengguna tanpa perlu beralih ke mode kernel.
+   - **Kernel Threads:** Memiliki waktu pergantian konteks yang lebih banyak karena melibatkan perpindahan ke mode kernel.
 
-    **Keuntungan**:
+   Hal ini mempengaruhi efisiensi eksekusi program multithreaded, terutama dalam aplikasi yang memerlukan banyak pergantian konteks.
 
-    • Lebih mudah diimplementasikan karena programmer tidak perlu khawatir tentang sinkronisasi antar thread
+3. **Operasi Blokir:**
+   - **User Threads:** Jika satu thread pengguna melakukan operasi blokir, seluruh proses akan diblokir karena kernel tidak menyadari adanya thread pengguna lainnya.
+   - **Kernel Threads:** Jika satu thread kernel melakukan operasi blokir, thread lainnya masih dapat dieksekusi karena kernel mengelola masing-masing thread secara independen.
 
-    • Dapat meningkatkan kinerja program dengan memungkinkan pelaksanaan beberapa tugas secara bersamaan
+   Perbedaan ini penting karena mempengaruhi kemampuan aplikasi untuk tetap responsif dan menggunakan sumber daya sistem secara efisien.
 
-    **Kekurangan**:
+### Soal 3
 
-    • Potensi terjadinya deadlock jika dua atau lebih thread saling menunggu satu sama lain untuk menyelesaikan tugas
+**Pertanyaan:**
+Apa saja tantangan utama dalam pemrograman multicore? Jelaskan dua tantangan tersebut dan bagaimana pengaruhnya terhadap pengembangan perangkat lunak.
 
-    • Potensi terjadinya livelock jika dua atau lebih thread terus-menerus bertukar sumber daya, tetapi tidak ada yang dapat menyelesaikan tugasnya
+**Jawaban:**
+1. **Dividing Activities:**
+   Tantangannya adalah memecah tugas dengan benar untuk menemukan area yang dapat dibagi menjadi sub-tugas terpisah yang dapat dijalankan secara paralel. Pemrogram harus mengidentifikasi bagian-bagian dari aplikasi yang dapat dieksekusi secara independen tanpa saling bergantung. Jika tidak dilakukan dengan benar, pembagian yang salah dapat menyebabkan overhead sinkronisasi yang tinggi atau ketidakseimbangan beban kerja.
 
-    **Thread non-blocking**
+   Pengaruhnya terhadap pengembangan perangkat lunak adalah bahwa perancang perangkat lunak harus memiliki pemahaman yang mendalam tentang aplikasi dan algoritma yang digunakan untuk memecahkannya secara efektif. Ini menambah kompleksitas desain dan memerlukan waktu lebih banyak untuk memastikan bahwa pemecahan tugas dilakukan dengan benar.
 
-    **Keuntungan**:
+2. **Data Dependency:**
+   Karena berbagai sub-tugas kecil berjalan di berbagai inti, mungkin saja satu sub-tugas bergantung pada data dari sub-tugas lainnya. Sinkronisasi antara sub-tugas ini sangat penting untuk memastikan eksekusi yang benar. Pemrogram harus mengelola akses ke data bersama dan menghindari kondisi balapan dan deadlock.
 
-    • Dapat meningkatkan responsivitas program dengan memungkinkan pengguna berinteraksi dengan program saat tugas lain masih diproses
+   Pengaruhnya terhadap pengembangan perangkat lunak adalah meningkatnya kompleksitas dalam pengelolaan sinkronisasi dan komunikasi antar thread. Ini memerlukan penggunaan mekanisme sinkronisasi yang tepat seperti mutex, semaphores, dan kondisi variabel, yang dapat memperlambat eksekusi jika tidak digunakan dengan bijak. Selain itu, debugging dan pengujian aplikasi multithreaded menjadi lebih sulit karena adanya kemungkinan kesalahan yang sulit diprediksi dan direproduksi.
 
-    • Dapat membantu menghindari deadlock dan livelock
+### Soal 4
 
-    **Kekurangan**:
+**Pertanyaan:**
+Apa perbedaan antara pendekatan asynchronous dan deferred dalam pembatalan thread?
 
-    • Lebih kompleks untuk diprogram karena programmer harus mempertimbangkan sinkronisasi antar thread
+**Jawaban:**
+1. **Asynchronous Cancellation:**
+   - Pembatalan secara tiba-tiba menghentikan thread target tanpa memperhatikan statusnya.
+   - Thread dihentikan secara langsung tanpa memberikan kesempatan untuk membersihkan sumber daya atau menyelesaikan operasi yang sedang berjalan.
+   - Dapat menyebabkan masalah seperti kebocoran sumber daya atau data yang rusak jika thread tersebut memperbarui informasi bersama.
+   - Tidak memberikan kesempatan bagi thread target untuk menyelesaikan tugasnya dengan benar.
 
-    • Dapat menyebabkan overhead performa yang lebih tinggi karena thread non-blocking perlu memeriksa status kejadian secara berkala
+2. **Deferred Cancellation:**
+   - Memberikan kesempatan kepada thread target untuk membersihkan diri dan keluar dengan tenang.
+   - Thread memeriksa bendera pembatalan secara berkala untuk melihat apakah thread tersebut harus berhenti.
+   - Titik pembatalan adalah saat-saat tertentu dalam kode thread di mana pembatalan aman karena thread tidak berada di tengah-tengah operasi yang kritis.
+   - Menyediakan cara yang lebih terstruktur untuk menghentikan thread, memastikan bahwa tidak ada sumber daya yang bocor dan operasi yang belum selesai dapat ditangani dengan benar sebelum thread dihentikan.
 
-3. Jelaskan perbedaan antara thread blocking dan non-blocking!
+### Soal 4
 
-    **Jawab**:
+**Pertanyaan:**
+Apa itu Thread Local Storage (TLS) dan apa kegunaannya dalam pemrograman multithreading?
 
-    • **Thread blocking**: Thread blocking terjadi ketika sebuah thread dihentikan sementara karena menunggu suatu kejadian, seperti penyelesaian operasi I/O atau ketersediaan sumber daya yang diperlukan. Saat thread blocking, thread tersebut tidak bisa menggunakan CPU dan sumber daya lainnya.
+**Jawaban:**
+1. **Thread Local Storage (TLS):**
+   - Thread Local Storage (TLS) adalah metode di mana setiap thread dalam proses multithreaded dapat mengalokasikan lokasi untuk menyimpan data spesifik thread.
+   - Data dalam TLS bersifat spesifik untuk setiap thread dan tidak dibagikan dengan thread lain dalam proses yang sama.
+   - TLS memungkinkan setiap thread memiliki salinan data mereka sendiri, yang berguna dalam skenario di mana beberapa thread memerlukan akses ke data yang berbeda-beda.
+   
+2. **Kegunaan dalam Pemrograman Multithreading:**
+   - TLS sangat berguna ketika tidak ada kendali atas proses pembuatan thread atau ketika menggunakan kumpulan thread.
+   - Memungkinkan variabel atau data tertentu disimpan secara terpisah untuk setiap thread, menghindari potensi konflik atau kerusakan data yang disebabkan oleh akses bersama.
+   - Berguna untuk menyimpan konteks atau informasi yang berkaitan dengan thread tertentu, seperti ID thread, variabel lokal, atau status tertentu yang spesifik untuk thread tersebut.
+   - Mempermudah pengembangan aplikasi multithreading dengan memungkinkan pengelolaan data yang lebih terstruktur dan aman antara thread.
 
-    • **Thread non-blocking**: Thread non-blocking adalah thread yang bisa tetap berjalan meskipun sedang menunggu suatu kejadian. Thread non-blocking biasanya memanfaatkan teknik polling atau callback untuk memeriksa status kejadian secara berkala.
-
-4. Apa saja masalah yang dapat terjadi dalam pemrograman multi-thread?
-
-    **Jawab**:
-
-    Beberapa masalah yang dapat terjadi dalam pemrograman multi-thread adalah:
-
-    • **Deadlock**: Deadlock adalah situasi di mana dua atau lebih thread saling menunggu satu sama lain untuk menyelesaikan tugasnya,     sehingga tidak ada thread yang dapat melanjutkan
-
-    • **Race condition**: Race condition adalah situasi di mana hasil suatu program bergantung pada urutan eksekusi thread
-
-    • **Livelock**: Livelock adalah situasi di mana dua atau lebih thread terus-menerus bertukar sumber daya, tetapi tidak ada yang dapat menyelesaikan tugasnya
-
-5. Apa saja mekanisme sinkronisasi yang digunakan dalam thread?
-
-    **Jawab**:
-
-    Mekanisme sinkronisasi digunakan untuk memastikan bahwa thread yang berbeda mengakses data dan sumber daya secara aman dan terkoordinasi. Beberapa mekanisme sinkronisasi yang umum digunakan adalah:
-
-    • **Mutex**: Mutex (mutual exclusion) adalah kunci yang hanya dapat dimiliki oleh satu thread pada satu waktu
-
-    • **Semaphore**: Semaphore adalah variabel yang nilainya dapat digunakan untuk membatasi jumlah thread yang dapat mengakses sumber daya tertentu
-
-    • **Condition variable**: Condition variable adalah variabel yang dapat digunakan untuk mensinkronisasi thread yang menunggu peristiwa tertentu terjadi
-
-6. Apa saja faktor yang dapat memengaruhi kinerja program multi-threaded?
-
-    **Jawab**:
-
-    Banyak faktor yang dapat memengaruhi kinerja program multi-threaded, antara lain:
-
-    • **Jumlah thread**: Semakin banyak thread yang digunakan, semakin tinggi overhead performa program
-
-    • **Sinkronisasi**: Mekanisme sinkronisasi dapat menyebabkan overhead performa, terutama jika thread sering mengakses sumber daya yang sama
-
-    • **Penjadwalan**: Algoritma penjadwalan yang digunakan dapat memengaruhi kinerja program
-
-    • **Beban kerja**: Jenis tugas yang dijalankan oleh thread dapat memengaruhi kinerja program
 ## Referensi
 
 - https://www.geeksforgeeks.org/benefits-of-multithreading-in-operating-system/
