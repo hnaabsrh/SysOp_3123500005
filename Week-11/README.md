@@ -29,33 +29,33 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 ## First Come First Serve Algorithm
 ### Percobaan Running Program
 
-![App Screenshot](img/FCFS-Flowchart.jpg)
+![App Screenshot](Assets/1.png)
     
 ### Flowchart First Come First Serve Algorithm
 
-![App Screenshot](img/FCFS-Flowchart.jpg)
+![App Screenshot](Assets/fcfs.drawio.png)
 
 ### Analisis
 
 ## Shortest Job First Algorithm
 ### Percobaan Running Program
 
-![App Screenshot](img/FCFS-Flowchart.jpg)
+![App Screenshot](Assets/2.png)
 
 ### Flowchart Shortest Job First Algorithm
 
-![App Screenshot](img/FCFS-Flowchart.jpg)
+![App Screenshot](Assets/sjf.drawio.png)
 
 ### Analisis
 
 ## Round Robin Algorithm
 ### Percobaan Running Program
 
-![App Screenshot](img/FCFS-Flowchart.jpg)
+![App Screenshot](Assets/3.png)
 
 ### Flowchart Round Robin Algorithm
 
-![App Screenshot](img/FCFS-Flowchart.jpg)
+![App Screenshot](Assets/roundrobin.jpg)
 
 ### Analisis
 
