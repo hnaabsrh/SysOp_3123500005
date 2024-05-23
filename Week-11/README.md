@@ -17,3 +17,25 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
     <hr>
     <hr>
 </div>
+
+# Scheduling Algorithm
+## Daftar Isi
+- [First Come First Serve Algorithm](#first-come-first-serve-algorithm)
+- [Shortest Job First Algorithm](#shortest-job-first-algorithm)
+- [Round Robin Algorithm](#round-robin-algorithm)
+
+
+
+
+
+
+
+
+
+
+## First Come First Serve Algorithm
+## Shortest Job First Algorithm
+## Round Robin Algorithm
+
+
+
