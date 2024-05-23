@@ -26,7 +26,7 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
     - [Implicit Threading](#implicit-threading)
     - [Threading Issues](#threading-issues)
     - [Operating System Examples](#threading-issues)
-- [Soal dan Jawaban Seputar Materi Threads](#soaldanjawaban)
+- [Soal dan Jawaban Seputar Materi Threads](#soal-dan-jawaban-seputar-materi-threads)
 - [Referensi](#referensi)
 
 ## Esai Threads
