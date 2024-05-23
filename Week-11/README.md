@@ -18,24 +18,46 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
     <hr>
 </div>
 
-# Scheduling Algorithm
+
 ## Daftar Isi
 - [First Come First Serve Algorithm](#first-come-first-serve-algorithm)
 - [Shortest Job First Algorithm](#shortest-job-first-algorithm)
 - [Round Robin Algorithm](#round-robin-algorithm)
 
-
-
-
-
-
-
-
-
+# Scheduling Algorithm
 
 ## First Come First Serve Algorithm
+### Percobaan Running Program
+
+![App Screenshot](img/FCFS-Flowchart.jpg)
+    
+### Flowchart First Come First Serve Algorithm
+
+![App Screenshot](img/FCFS-Flowchart.jpg)
+
+### Analisis
+
 ## Shortest Job First Algorithm
+### Percobaan Running Program
+
+![App Screenshot](img/FCFS-Flowchart.jpg)
+
+### Flowchart Shortest Job First Algorithm
+
+![App Screenshot](img/FCFS-Flowchart.jpg)
+
+### Analisis
+
 ## Round Robin Algorithm
+### Percobaan Running Program
+
+![App Screenshot](img/FCFS-Flowchart.jpg)
+
+### Flowchart Round Robin Algorithm
+
+![App Screenshot](img/FCFS-Flowchart.jpg)
+
+### Analisis
 
 
 
